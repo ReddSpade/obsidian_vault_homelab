@@ -1,0 +1,8 @@
+## Hardware 
+- Le Routeur n'est pas encore livré 
+- UPDATE: Le Proxmox Backup Server est livré
+- Point d'accès commandé, pas encore livré
+
+## Management Layer:
+- [[01_VLANS]] créé, contient le plan VLAN
+- [[02_Matrice_de_flux_inter-VLAN]] créé, contient les flux inter VLAN

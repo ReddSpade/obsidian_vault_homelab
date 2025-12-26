@@ -1,0 +1,11 @@
+## Hardware 
+- Le Routeur n'est pas encore livré 
+- Le Proxmox Backup Server n'est pas encore livré 
+- Les Proxmox nodes ne sont pas encore en HA, car les cartes réseaux 2,5GbE ne sont pas livrées 
+  
+## Storage Layer: 
+- Le NAS a juste été initialisé en RAID5 avec un dataset, rien de plus. 
+
+## Infra Layer:
+- Ring 0: Netbird, Zitadel, Traefik, Technitium DNS sont prêts (sécurisation à revoir)
+- OpenBao est à configurer. Netbox est manquant.

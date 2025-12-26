@@ -1,0 +1,11 @@
+# Created by https://www.toptal.com/developers/gitignore/api/obsidian
+# Edit at https://www.toptal.com/developers/gitignore?templates=obsidian
+
+### Obsidian ###
+# config dir
+.obsidian/
+.trash/
+# End of https://www.toptal.com/developers/gitignore/api/obsidian
+
+
+/03_Infrastructure/Reseau/03_IPAM.md
