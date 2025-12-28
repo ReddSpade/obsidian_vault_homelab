@@ -71,7 +71,7 @@ NAS
 ├── Storage:
 │   ├── OS: NVMe
 │   ├── Data:
-│   │   └── 4x4Tb HDD WDRED PRO (RAI5)
+│   │   └── 4x4Tb HDD WDRED PRO (RAID5)
 │   └── Network:
 │       └── NIC01: 2,5Gb/s
 └── OS: TrueNAS Scale
