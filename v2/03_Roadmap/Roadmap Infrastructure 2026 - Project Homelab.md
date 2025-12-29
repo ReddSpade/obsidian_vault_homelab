@@ -56,6 +56,8 @@
 
 **Objectif:** Avoir un DNS contenant une zone d'Autorité, et qui fasse Récursivité et Filtrage.
 
+**Type de virtualisation:** LXC (Pas de db).
+
 **Critères de complétion:** 
 - Zone `int.lavaduck.net` atteignable par tout le réseau.
 - Baux DHCP et réservations définies.
@@ -67,16 +69,20 @@
 
 **Objectif:** Disposer d'une entité de certification permettant de sécuriser les connexions internes.
 
+**Type de virtualisation:** LXC (Pas de db).
+
 **Critères de complétion:** 
 - Root CA et Intermediate CA définies.
 - Serveur ACME disponible.
-- Root CA sécurisée.
+- Root CA stockée offline sur support chiffré, hors du LXC Step-CA.
 
 **Dépendance:** Hyperviseur Proxmox en ligne.
 
 ### 2.2 Reverse Proxy (Traefik)
 
 **Objectif:** Disposer d'un Reverese Proxy redirigeant les requêtes vers les bonnes IP, interne comme externe.
+
+**Type de virtualisation:** Machine Virtuelle (Nécessite Docker).
 
 **Critères de complétion:** 
 - TLS Resolver Cloudflare paramétré via challenge DNS-01.
@@ -93,6 +99,8 @@
 
 **Objectif:** Avoir un IdP sécurisant les connexion via protocole OIDC quand c'est possible.
 
+**Type de virtualisation:** Machine Virtuelle (Nécessite Docker + Db).
+
 **Critères de complétion:** 
 - Groupes créés afin de respecter le modèle RBAC.
 - L'endpoint `.well-known/openid-configuration` répond.
@@ -102,6 +110,8 @@
 ### 2.4 VPN (Netbird)
 
 **Objectif:** Mettre en place une solution de VPN Mesh flexible permettant différent type d'accès externe.
+
+**Type de virtualisation:** Machine Virtuelle (Nécessite Docker).
 
 **Critères de complétion:** 
 - Mode "Mesh" testé permettant une connexion entre plusieurs PC.
@@ -121,6 +131,8 @@
 
 **Objectif:** Avoir en place un Gitlab privé qui contiendra la majeure partie de l'IaC de l'infrastructure.
 
+**Type de virtualisation:** Machine Virtuelle (due à la DB).
+
 **Critères de complétion:**
 - Gitlab exposé en interne et atteignable à `gitlab.int.lavaduck.net`.
 - Accès par OIDC configuré.
@@ -132,9 +144,11 @@
 - Zitadel en ligne.
 - Traefik en ligne.
 
-### 3.1 Sémaphore
+### 3.1 Sémaphore [EN RÉFLEXION]
 
 **Objectif:** Disposer d'une machine avec UI et API dédiée à l'orchestration des outils Terraform, Ansible et Packer.
+
+**Type de virtualisation:** Machine Virtuelle (due à la DB).
 
 **Critères de complétion:** 
 - Sémaphore atteignable sur `semaphore.int.lavaduck.net`.
@@ -154,13 +168,60 @@
 
 **Objectif:** Avoir une inventorisation complète du parc informatique de la maison, avec un supplément sur le référencement de l'IPAM comme seule source de vérité.
 
+**Type de virtualisation:** Machine Virtuelle (due à la PostgreSQL).
+
 **Critères de complétion:** 
 - [EN RÉFLEXION, SOFTWARE INCONNU POUR LE MOMENT]
 
 **Dépendance:** 
 - Hypervisuer Proxmox en ligne.
+- Zitadel en ligne.
+- Traefik en ligne.
+- Technitium (résolution DNS côté client)
 
 ## Phase 4: Automatisation et IaC
+
+**Objectif final:** Avoir une infrastructure immuable et automatisée, gérée par code conformément aux principes GitOps.
+### 4.0 Packer
+
+**Objectif:** Avoir un builder de Golden Images pour les machines virtuelles, dans l'idéal prêt pour de l'OS Wide.
+
+**Critères de complétion:**
+- Peut créer une template Debian 13 déployable.
+- Peut facilement ajouter une autre source d'OS en renseignant un autre fichier de vars.
+
+**Dépendance:** 
+- Gitlab en ligne.
+### 4.1 Cloud-Init
+
+**Objectif:** Injecter les informations lors du déploiement Terraform/OpenTofu (IP, Hostname, Clé SSH, Users, compte de service, ...)
+
+**Critères de complétion:**
+- [EN RÉFLEXION]
+
+**Dépendance:** 
+- Gitlab en ligne.
+### 4.2 Terraform/OpenTofu
+
+**Objectif:** Déployer des VM et LXC prod ready à partir des templates Packer généré, le but définitif est de moins possible toucher à l'UI Proxmox.
+
+**Critères de complétion:**
+- VM déployée et prête sans intervention manuelle sur l'UI.
+- Template de déploiement pour Talos Linux afin de préparer la phase 6 Kubernetes.
+- LXC déployé et prêt sans intervention manuelle sur l'UI.
+
+**Dépendance:** 
+- Gitlab en ligne.
+### 4.3 Ansible
+
+**Objectif:** Préparer des playbooks divers permettant de gérer la configuration des machines (mise à jour, installation de paquets, ...)
+
+**Critères de complétion:**
+- Playbook de mise à jour complet pour Debian.
+- Playbook d'installation de paquets.
+
+**Dépendance:** 
+- Gitlab.
 
 ## Phase 5: Mise en HA du Cluster Proxmox + Proxmox Backup Server 
 

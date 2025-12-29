@@ -2,9 +2,9 @@
 
 ### 1.0 Réseau Théorique
 
-- [ ] Plan d'adressage documenté.
-- [ ] VLANS.
-- [ ] Flux Inter-VLAN.
+- [x] Plan d'adressage documenté.
+- [x] VLANS.
+- [x] Flux Inter-VLAN.
 - [ ] [EN RÉFLEXION] Règles pare feu.
 
 ### 1.1 Installation des équipements réseaux 
@@ -29,15 +29,15 @@
 - [ ] Définition de l'IP fixe.
 - [ ] Tagging de VLANS.
 
-## Phase 2: Infrastructure Critique
+## Phase 2: Infrastructure critique
 
 ### 2.0 DNS + DHCP (Technitium)
 
 #### DNS
 
-- [ ] Création de la Zone `int.lavaduck.net`.
-- [ ] Installation d'SQLite pour les logs.
-- [ ] Mise en place des liste de bloqueurs de pubs les plus connues (Multi PRO ++).
+- [x] Création de la Zone `int.lavaduck.net`.
+- [x] Installation d'SQLite pour les logs.
+- [x] Mise en place des liste de bloqueurs de pubs les plus connues (Multi PRO ++).
 - [ ] [EN RÉFLEXION] création de la zone upstream/stub `lavaduck.net` ?
 
 #### DHCP
@@ -48,38 +48,71 @@
 
 ### 2.1 PKI (Step-CA)
 
-- [ ] Création de l'autorité de certification.
+- [x] Création de l'autorité de certification.
 - [ ] Sécurisation du Root CA key dans une clé USB chiffrée.
-- [ ] Activation du serveur ACME.
-- [ ] Définition d'une entrée A spécifique dans Technitium DNS pour pointer sur Step-CA.
+- [x] Activation du serveur ACME.
+- [x] Définition d'une entrée A spécifique dans Technitium DNS pour pointer sur Step-CA.
 
-### 2.2 Reverse Proxy (Traefik)
+### 2.2 ~~Reverse Proxy (Traefik)~~
 
-- [ ] Déploiement de Traefik sur Docker.
-- [ ] Mise en place du Resolver DNS-01 Cloudflare.
-- [ ] Création d'une clé API sur Technitium DNS pour les entrées TXT.
-- [ ] Mise en place du Resolver DNS-01 Step-CA.
-- [ ] Création des fichiers dynamiques.
+- [x] Déploiement de Traefik sur Docker.
+- [x] Mise en place du Resolver DNS-01 Cloudflare.
+- [x] Création d'une clé API sur Technitium DNS pour les entrées TXT.
+- [x] Mise en place du Resolver DNS-01 Step-CA.
+- [x] Création des fichiers dynamiques.
 
-### 2.3 IdP (Zitadel)
+### 2.3 ~~IdP (Zitadel)~~
 
-- [ ] Déploiement de Zitadel sur Docker.
-- [ ] Création des Projets.
-- [ ] Mise en place d'un compte Resend pour les invitations mails via Cloudflare.
-- [ ] Invitation des utilisateurs.
+- [x] Déploiement de Zitadel sur Docker.
+- [x] Création des Projets.
+- [x] Mise en place d'un compte Resend pour les invitations mails via Cloudflare.
+- [x] Invitation des utilisateurs.
 
-### 2.4 VPN (Netbird)
+### 2.4 ~~VPN (Netbird)~~
 
-- [ ] Déploiement de Netbird sur Docker.
-- [ ] Ajout de la connexion OIDC avec Zitadel.
-- [ ] Acivation du champ "groups" du JWT Zitadel.
-- [ ] Création d'un Network avec adresse du réseau (.0) pour l'accès admin.
-- [ ] Création d'un Network avec accès aux PVE (x.x.x.x/32) pour accès homelab pour projet groupe.
-- [ ] Mise en place du Nameserver redirigeant au Serveur DNS.
-- [ ] Invitation des utilisateurs.
+- [x] Déploiement de Netbird sur Docker.
+- [x] Ajout de la connexion OIDC avec Zitadel.
+- [x] Acivation du champ "groups" du JWT Zitadel.
+- [x] Création d'un Network avec adresse du réseau (.0) pour l'accès admin.
+- [x] Création d'un Network avec accès aux PVE (x.x.x.x/32) pour accès homelab pour projet groupe.
+- [x] Mise en place du Nameserver redirigeant au Serveur DNS.
+- [x] Invitation des utilisateurs.
 
 ## Phase 3: Infrastructure non critique
+### 3.0 Gitlab
+
+- [ ] Déploiement de Gitlab Omnibus.
+- [ ] Optimisation de la consommation des ressources de Gitlab dans le fichier `/etc/gitlab/gitlab.rb`.
+- [ ] Création des groupes, sous groupes et projets.
+- [ ] Setup de la clé SSH.
+
+### 3.1 Sémaphore
+
+- [ ] [EN RÉFLEXION, SOFTWARE INCONNU]
+
+### 3.2 Netbox
+
+- [ ] [EN RÉFLEXION, SOFTWARE INCONNU]
+
 ## Phase 4: Automatisation et IaC
+
+### 4.0 Packer
+ 
+- [ ] Mise en place d'un projet de templatisation LXC.
+- [ ] Mise en place d'un projet de templatisation VM OS wide.
+
+### 4.1 Cloud-Init
+
+- [ ] [EN RÉFLEXION, SOFTWARE INCONNU]
+
+### 4.2 Terraform/OpenTofu
+
+- [ ] Mise en place d'un projet de déploiement de template LXC.
+- [ ] Mise en place d'un projet de déploiement de template VM OS wide.
+
+### 4.3 Ansible
+
+- [ ] [EN RÉFLEXION SUR LES PLAYBOOKS À CRÉER]
 
 ## Phase 5: Mise en HA du Cluster Proxmox + Proxmox Backup Server 
 
