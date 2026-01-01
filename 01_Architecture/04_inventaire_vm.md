@@ -15,9 +15,15 @@ Utilité principale: PKI (Step-CA)
 **102**: lxc-vlt-prd-deb13-01
 Utilité principale: Vault (OpenBao)
 - Gestion des secrets
+
+**103**: lxc-edge-prd-deb13-01
+Utilité principale: Reverse Proxy Gateway (Traefik)
+- Hors hostname, `*.int.lavaduck.net` redirigé vers l'IP Traefik, qui gère ensuite via règle dynamique les redirections
+- 2 TLS pour challenge DNS-01: Step-CA pour services Internes, cloudlfare pour externe.
+- SSL Terminaison
 ## VM :
 
-**200**: vir-srv-prd-deb13-glab01
+**200**: vm-glab-prd-deb13-01
 Utilité principale: SCM (Gitlab)
 - Gestion de versioning
 
@@ -27,17 +33,18 @@ Utilité principale: IdP + VPN (Zitadel + Netbird)
 - Gestion des droits et accès IAM
 - Dockerisé
 
-**202**: vm-edge-prd-deb13-01
-Utilité principale: Reverse Proxy Gateway (Traefik)
-- Hors hostname, `*.int.lavaduck.net` redirigé vers l'IP Traefik, qui gère ensuite via règle dynamique les redirections
-- 2 TLS pour challenge DNS-01: Step-CA pour services Internes, cloudlfare pour externe.
-- SSL Terminaison
-- Dockerisé
+**203**: vm-ntbx-prd-deb13-01
+Utilité principale: DCIM + IPAM (Netbox)
+- Source de vérité matérielle.
+- Source de vérité réseau.
+
+**204**: vm-grun-prd-deb13-01
+Utilité principale: Gitlab Runner contenant Docker
+- Runner pour les CI/CD Gitlab.
+- Contient Docker pour faire du DinD (Docker in Docker).
 
 ## Templates
 
 **8000**: lxc-tpl-deb13
 Template "ready" (clé ssh adm, paquets à jours, sudoer adm rajouté) basée sur lxc **100** avant son installation DNS.
 
-**9000**: vm-srv-tpl-deb12
-Template oudated de Debian 12, vieux projet effectué avec terraform.

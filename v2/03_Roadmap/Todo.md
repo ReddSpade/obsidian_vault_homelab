@@ -78,20 +78,31 @@
 - [x] Mise en place du Nameserver redirigeant au Serveur DNS.
 - [x] Invitation des utilisateurs.
 
+### 2.5 Secret Manager (OpenBao)
+
+- [x] Déploiement d'OpenBao.
+- [ ] Ajout de la connexion OIDC avec Zitadel
+- [ ] [EN RÉFLEXION]
 ## Phase 3: Infrastructure non critique
 ### 3.0 Gitlab
 
-- [ ] Déploiement de Gitlab Omnibus.
-- [ ] Optimisation de la consommation des ressources de Gitlab dans le fichier `/etc/gitlab/gitlab.rb`.
-- [ ] Création des groupes, sous groupes et projets.
-- [ ] Setup de la clé SSH.
+- [x] Déploiement de Gitlab Omnibus.
+- [x] Optimisation de la consommation des ressources de Gitlab dans le fichier `/etc/gitlab/gitlab.rb`.
+- [x] Création des groupes, sous groupes et projets.
+- [x] Setup de la clé SSH.
 
-### 3.1 Sémaphore
+### 3.1 Gitlab Runner
+
+- [x] Installation du dépôt de gitlab runner.
+- [x] Installation de Docker.
+- [x] Connexion à Gitlab.
+### 3.2 Sémaphore
 
 - [ ] [EN RÉFLEXION, SOFTWARE INCONNU]
 
-### 3.2 Netbox
+### 3.3 Netbox
 
+- [x] Déploiement de Netbox.
 - [ ] [EN RÉFLEXION, SOFTWARE INCONNU]
 
 ## Phase 4: Automatisation et IaC

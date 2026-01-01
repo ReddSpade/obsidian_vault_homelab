@@ -1,15 +1,15 @@
 
 ## Plan des VLANS
 
-| VLAN | Zone           | Subnet         | Gateway     | Rôle                               |
-| ---- | -------------- | -------------- | ----------- | ---------------------------------- |
-| 10   | Management     | `10.10.0.0/24` | `10.10.0.1` | Proxmox (+PBS), switches, OPNsense |
-| 20   | Infrastructure | `10.20.0.0/24` | `10.20.0.1` | Ring 0 (DNS, PKI, Vault, IdP)      |
-| 30   | Compute        | `10.30.0.0/24` | `10.30.0.1` | Kubernetes nodes                   |
-| 40   | Storage        | `10.40.0.0/24` | `10.40.0.1` | NAS                                |
-| 50   | Users          | `10.50.0.0/24` | `10.50.0.1` | Postes clients                     |
-| 60   | IoT            | `10.60.0.0/24` | `10.60.0.1` | Appareils "non fiables"            |
-| 70   | Guest          | `10.70.0.0/24` | `10.70.0.1` | WiFi invités                       |
+| VLAN | Zone           | Subnet         | Gateway     | Rôle                                    |
+| ---- | -------------- | -------------- | ----------- | --------------------------------------- |
+| 10   | Management     | `10.10.0.0/24` | `10.10.0.1` | Proxmox (+PBS), switches, OPNsense      |
+| 20   | Infrastructure | `10.20.0.0/24` | `10.20.0.1` | Infrastructure critique et non critique |
+| 30   | Compute        | `10.30.0.0/24` | `10.30.0.1` | Kubernetes nodes                        |
+| 40   | Storage        | `10.40.0.0/24` | `10.40.0.1` | NAS                                     |
+| 50   | Users          | `10.50.0.0/24` | `10.50.0.1` | Postes clients                          |
+| 60   | IoT            | `10.60.0.0/24` | `10.60.0.1` | Appareils "non fiables"                 |
+| 70   | Guest          | `10.70.0.0/24` | `10.70.0.1` | WiFi invités                            |
 
 ### Choix 
 

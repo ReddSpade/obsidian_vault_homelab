@@ -102,6 +102,7 @@
 **Type de virtualisation:** Machine Virtuelle (Nécessite Docker + Db).
 
 **Critères de complétion:** 
+- Accessible via `auth.lavaduck.net`
 - Groupes créés afin de respecter le modèle RBAC.
 - L'endpoint `.well-known/openid-configuration` répond.
 
@@ -114,6 +115,7 @@
 **Type de virtualisation:** Machine Virtuelle (Nécessite Docker).
 
 **Critères de complétion:** 
+- Accessible via `netbird.lavaduck.net`
 - Mode "Mesh" testé permettant une connexion entre plusieurs PC.
 - Mode point à site testé permettant une connexion aux ressources du réseau via NAT.
 - Nom DNS défini afin de résoudre les FQDN distants.
@@ -124,6 +126,22 @@
 - [[#2.0 DNS + DHCP (Technitium)]]
 - [[#2.3 IdP (Zitadel)]]
 
+### 2.5 Secret Manager (OpenBao)
+
+**Objectif:** Disposer d'un serveur de gestion de secret sécurisé afin de pouvoir y ranger les informations sensibles.
+
+**Type de virtualisation:** LXC (Pas de db).
+
+**Critères de complétion:** 
+- Accessible via `bao.int.lavaduck.net`.
+- Vault créé.
+- Connexion par OIDC fonctionnelle.
+
+**Dépendance:** 
+Étapes achevées:
+- Hyperviseur Proxmox en ligne.
+- [[#2.0 DNS + DHCP (Technitium)]]
+- [[#2.3 IdP (Zitadel)]]
 ## Phase 3: Infrastructure non critique
 
 **Objectif final:** La phase 3 consiste à la mise en place des éléments du cluster qui ne sont pas indispensable à son démarrage. Comme des outils d'inventoring et SCM.
@@ -144,7 +162,20 @@
 - Zitadel en ligne.
 - Traefik en ligne.
 
-### 3.1 Sémaphore [EN RÉFLEXION]
+### 3.1 Gitlab Runner
+
+**Objectif:** Avoir en place un runner d'instance avec executor Gitlab afin de pouvoir créer des CI/CD.
+
+**Type de virtualisation:** Machine Virtuelle (due à docker).
+
+**Critères de complétion:**
+- Runner enregistré sur Gitlab.
+
+**Dépendance:** 
+- Hyperviseur Proxmox en ligne.
+- Gitlab en ligne.
+- Traefik en ligne.
+### 3.2 Sémaphore [EN RÉFLEXION]
 
 **Objectif:** Disposer d'une machine avec UI et API dédiée à l'orchestration des outils Terraform, Ansible et Packer.
 
@@ -164,7 +195,7 @@
 - Traefik en ligne.
 - Technitium (résolution DNS côté client)
 
-### 3.2 Netbox
+### 3.3 Netbox
 
 **Objectif:** Avoir une inventorisation complète du parc informatique de la maison, avec un supplément sur le référencement de l'IPAM comme seule source de vérité.
 
