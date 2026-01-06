@@ -62,6 +62,15 @@ Router
 Access Points
 └── Unifi U7-Pro-XG
 
+Switch MokerLink 2,5 GbE
+└── Network
+    ├── NIC01-8: 2,5Gb/s
+    └── NIC09: SFP+
+    
+Switch NetGear 1GbE
+└── Network
+    └── NIC01-8: 1Gb/s
+
 ### STORAGE
 
 NAS
@@ -73,6 +82,7 @@ NAS
 │   ├── Data:
 │   │   └── 4x4Tb HDD WDRED PRO (RAID5)
 │   └── Network:
-│       └── NIC01: 2,5Gb/s
+│       ├── NIC01: 1Gb/s
+│       └── NIC02: SFP+
 └── OS: TrueNAS Scale
 ```

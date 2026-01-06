@@ -7,7 +7,7 @@ Type :
 Type d’Hardware de la machine
     • phy : Machine physique
     • vir : Machine virtuelle
-    • ctr : lxc
+    • lxc : Linux Container
     • vps : Machine cloud
 
 Fonction :
@@ -21,27 +21,28 @@ Ainsi de suite
 Env :
 Environnement de la machine
     • prd : Production
-    • dev : Developpment (avant prod)
+    • dev : Developpment
     • tst : VM de tests
     • bst : Bastion
 
 OS + Ver :
 Type d'OS et version
-    • deb12: Debian 12
+    • deb13: Debian 13
     • ws2025: Windows Server 2025
 
 ID :
 Informations optionelles + numéro :
+    • 01 : Instance 1 de cette objet
     • cp01 : Control Plane 01
     • wk02 : Worker Node 02
     • nix01 : NixOS 01
 
-
 ID des VM Proxmox :
-1xx - Containers 
-2xx - Linux VM
-3xx - Windows VM 
-4xx - Tests 
-5xx - Fonctions spécfiques 
-9xx - Templates
+1xx  - LXC 
+2xx  - Linux VM
+3xx  - Windows VM 
+4xx  - Tests 
+5xx  - Fonctions spécfiques
+8xxx - Templates LXC
+9xxx - Templates VM
 ```

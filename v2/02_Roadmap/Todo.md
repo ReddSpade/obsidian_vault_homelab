@@ -81,7 +81,7 @@
 ### 2.5 Secret Manager (OpenBao)
 
 - [x] Déploiement d'OpenBao.
-- [ ] Ajout de la connexion OIDC avec Zitadel
+- [x] Ajout de la connexion OIDC avec Zitadel
 - [ ] [EN RÉFLEXION]
 ## Phase 3: Infrastructure non critique
 ### 3.0 Gitlab
@@ -91,7 +91,7 @@
 - [x] Création des groupes, sous groupes et projets.
 - [x] Setup de la clé SSH.
 
-### 3.1 Gitlab Runner
+### 3.1 ~~Gitlab Runner~~
 
 - [x] Installation du dépôt de gitlab runner.
 - [x] Installation de Docker.
@@ -105,10 +105,10 @@
 - [x] Déploiement de Netbox.
 - [ ] [EN RÉFLEXION, SOFTWARE INCONNU]
 
-### 3.3 Unifi Controller
+### 3.3 ~~Unifi Controller~~
 
-- [ ] Déploiement du contrôleur.
-- [ ] Initialisation du point d'accès.
+- [x] Déploiement du contrôleur.
+- [x] Initialisation du point d'accès.
 ## Phase 4: Automatisation et IaC
 
 ### 4.0 Packer
