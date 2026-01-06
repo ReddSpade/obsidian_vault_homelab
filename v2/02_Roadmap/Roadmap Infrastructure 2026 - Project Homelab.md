@@ -210,6 +210,21 @@
 - Traefik en ligne.
 - Technitium (résolution DNS côté client)
 
+### 3.4 Unifi Controller
+
+**Objectif:** Utiliser l'interface d'Unifi afin de paramétrer les équipement réseau de type Ubiquiti de l'infrastructure.
+
+**Type de virtualisation:** Machine Virtuelle (Docker + MongoDB).
+
+**Critères de complétion:** 
+- Point d'accès enregistré et paramétrable.
+
+**Dépendance:** 
+- Hypervisuer Proxmox en ligne.
+- Zitadel en ligne.
+- Traefik en ligne.
+- Technitium (résolution DNS côté client)
+
 ## Phase 4: Automatisation et IaC
 
 **Objectif final:** Avoir une infrastructure immuable et automatisée, gérée par code conformément aux principes GitOps.

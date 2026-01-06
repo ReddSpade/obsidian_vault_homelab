@@ -28,21 +28,24 @@ Utilité principale: SCM (Gitlab)
 - Gestion de versioning
 
 **201**: vm-iam-prd-deb13-01
-Utilité principale: IdP + VPN (Zitadel + Netbird)
+Utilité principale: IdP + VPN (Zitadel + Netbird).
 - Accès distant géré par IdP
 - Gestion des droits et accès IAM
 - Dockerisé
 
 **203**: vm-ntbx-prd-deb13-01
-Utilité principale: DCIM + IPAM (Netbox)
+Utilité principale: DCIM + IPAM (Netbox).
 - Source de vérité matérielle.
 - Source de vérité réseau.
 
 **204**: vm-grun-prd-deb13-01
-Utilité principale: Gitlab Runner contenant Docker
+Utilité principale: Gitlab Runner.
 - Runner pour les CI/CD Gitlab.
 - Contient Docker pour faire du DinD (Docker in Docker).
 
+**205**: vm-ubqt-prd-deb13-01
+Utilité principale: Contrôleur Ubiquiti. 
+- Gestion via UI du matériel Ubiquiti dans la maison.
 ## Templates
 
 **8000**: lxc-tpl-deb13

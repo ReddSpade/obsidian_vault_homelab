@@ -35,15 +35,23 @@
 | IP        | Hostname           | Objet   | Fonction                 |
 | --------- | ------------------ | ------- | ------------------------ |
 | 10.20.0.1 | phy-rtr-prd-opn-01 | Routeur | Routing/Pare-Feu/Gateway |
+### Pool LXC
+
+| IP         | Hostname              | Objet | Fonction                |
+| ---------- | --------------------- | ----- | ----------------------- |
+| 10.20.0.20 | lxc-dns-prd-deb13-01  | LXC   | DNS                     |
+| 10.20.0.21 | lxc-pki-prd-deb13-01  | LXC   | PKI                     |
+| 10.20.0.22 | lxc-vlt-prd-deb13-01  | LXC   | Gestionnaire de Secrets |
+| 10.20.0.23 | lxc-edge-prd-deb13-01 | LXC   | Reverse Proxy           |
 ### Pool VM
 
-| IP         | Hostname             | Objet | Fonction                |
-| ---------- | -------------------- | ----- | ----------------------- |
-| 10.20.0.20 | lxc-dns-prd-deb13-01 | LXC   | DNS                     |
-| 10.20.0.21 | lxc-pki-prd-deb13-01 | LXC   | PKI                     |
-| 10.20.0.22 | lxc-vlt-prd-deb13-01 | LXC   | Gestionnaire de Secrets |
-| 10.20.0.23 | vm-iam-prd-deb13-01  | VM    | IdP + VPN               |
-| 10.20.0.24 | vm-edge-prd-deb13-01 | VM    | Reverse Proxy           |
+| IP         | Hostname             | Objet | Fonction               |
+| ---------- | -------------------- | ----- | ---------------------- |
+| 10.20.0.40 | vm-glab-prd-deb13-01 | VM    | SCM                    |
+| 10.20.0.41 | vm-iam-prd-deb13-01  | VM    | IdP + VPN              |
+| 10.20.0.42 | vm-ntbx-prd-deb13-01 | VM    | DCIM + IPAM            |
+| 10.20.0.43 | vm-grun-prd-deb13-01 | VM    | Gitlab Runner (Docker) |
+| 10.20.0.44 | vm-ubqt-prd-deb13-01 | VM    | Ubiquiti Controller    |
 
 ## VLAN 30 (Compute)
 

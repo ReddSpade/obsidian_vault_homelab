@@ -105,6 +105,10 @@
 - [x] Déploiement de Netbox.
 - [ ] [EN RÉFLEXION, SOFTWARE INCONNU]
 
+### 3.3 Unifi Controller
+
+- [ ] Déploiement du contrôleur.
+- [ ] Initialisation du point d'accès.
 ## Phase 4: Automatisation et IaC
 
 ### 4.0 Packer
