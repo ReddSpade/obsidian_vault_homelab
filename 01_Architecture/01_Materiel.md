@@ -2,35 +2,35 @@
 ### COMPUTE
 
 Proxmox
-├── Dell Optiplex 3080 Micro
+├── Shuttle Slim XH510G
 │   ├── CPU: Intel i5-10500T (6C/12T)
 │   ├── RAM: 64Gb DDR4 SODIMM
 │   ├── Stockage:
 │   │   ├── Boot: 256Gb SSD 2.5'
 │   │   └── Storage for VM: 2Tb NVMe
 │   ├── Network:
-│   │   ├── NIC01: 1Gb/s
-│   │   └── NIC02: 2,5Gb/s
+│   │   ├── NIC01: 1GbE
+│   │   └── NIC02: 10GbE
 │   └── OS: Proxmox VE
 │
-├── Dell Optiplex 7080 Micro
+├── Shuttle Slim XH510G
 │   ├── CPU: Intel i7-10700T (8C/16T)
 │   ├── RAM: 64Gb DDR4 SODIMM
 │   │   ├── Boot: 256Gb SSD 2.5'
 │   │   └── Storage for VM: 2Tb NVMe
 │   ├── Network:
-│   │   ├── NIC01: 1Gb/s
-│   │   └── NIC02: 2,5Gb/s
+│   │   ├── NIC01: 1GbE
+│   │   └── NIC02: 10GbE
 │   └── OS: Proxmox VE
 │
-└── Dell Optiplex 3080 Micro
+└── Shuttle Slim XH510G
     ├── CPU: Intel i5-10500T (6C/12T)
     ├── RAM: 64Gb DDR4 SODIMM
     │   ├── Boot: 256Gb SSD 2.5'
     │   └── Storage for VM: 2Tb NVMe
     ├── Network:
-    │   ├── NIC01: 1Gb/s
-    │   └── NIC02: 2,5Gb/s
+    │   ├── NIC01: 1GbE
+    │   └── NIC02: 10GbE
     └── OS: Proxmox VE
 
 Proxmox Backup Server
@@ -40,8 +40,8 @@ Proxmox Backup Server
     ├── Stockage:
     │   └── Storage for VM: 1Tb SSD 2.5'
     ├── Network:
-    │   ├── NIC01: 1Gb/s
-    │   └── NIC02: 2,5Gb/s
+    │   ├── NIC01: 1GbE
+    │   └── NIC02: 2.5GbE
     └── OS: Proxmox Backup Server
 
 ### NETWORK
@@ -53,23 +53,28 @@ Router
     ├── Stockage:
     │   └── Storage for VM: 256Gb NVME
     ├── Network:
-    │   ├── NIC01: 2,5Gb/s
-    │   ├── NIC02: 2,5Gb/s
-    │   ├── NIC03: 2,5Gb/s
-    │   └── NIC04: 2,5Gb/s
+    │   ├── NIC01: 10GbE
+    │   ├── NIC02: 10GbE
+    │   ├── NIC03: 2.5GbE
+    │   └── NIC04: 2.5GbE
     └── OS: OPNsense
 
 Access Points
 └── Unifi U7-Pro-XG
 
-Switch MokerLink 2,5 GbE
+Switch MokerLink 2.5 GbE
 └── Network
-    ├── NIC01-8: 2,5Gb/s
+    ├── NIC01-8: 2.5GbE
     └── NIC09: SFP+
     
 Switch NetGear 1GbE
 └── Network
-    └── NIC01-8: 1Gb/s
+    └── NIC01-8: 1GbE
+
+Switch keepLiNK 2.5GbE + 10GbE
+└── Network
+    ├── NIC01-4: 2.5GbE
+    └── NIC05-6: SFP+
 
 ### STORAGE
 
@@ -82,7 +87,7 @@ NAS
 │   ├── Data:
 │   │   └── 4x4Tb HDD WDRED PRO (RAID5)
 │   └── Network:
-│       ├── NIC01: 1Gb/s
+│       ├── NIC01: 1GbE
 │       └── NIC02: SFP+
 └── OS: TrueNAS Scale
 ```
