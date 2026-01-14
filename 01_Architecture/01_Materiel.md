@@ -91,4 +91,9 @@ NAS
 │       ├── NIC01: 1GbE
 │       └── NIC02: SFP+
 └── OS: TrueNAS Scale
+
+### OTHER
+
+UPS
+└── CyberPower CP1350EPFCLCD
 ```

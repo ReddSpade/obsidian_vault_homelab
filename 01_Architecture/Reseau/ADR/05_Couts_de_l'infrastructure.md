@@ -1,77 +1,42 @@
 ## Compute
 ### Proxmox
 
-#### OptiPlex
-
-##### Node 1
-
-| Objet                                       | Prix    | Source      | Date       |
-| ------------------------------------------- | ------- | ----------- | ---------- |
-| Dell OptiPlex 3080                          | 233,79€ | Leboncoin   | 24/08/2024 |
-| Intel I5-10500T (Inclus)                    | 0€      | Leboncoin   | 24/08/2024 |
-| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz   | 110,99€ | Amazon (Fr) | 19/06/2025 |
-| NVMe WD BLUE SN5000 2TB                     | 114,99€ | Amazon (De) | 03/07/2025 |
-| SSD 2.5" 256GB                              | 0€      | Récup       |            |
-| WLAN M.2 A+E Key adapter to 2.5GbE Ethernet | 29,90€  | Amazon (Fr) | 04/01/2026 |
-
-##### Node 2
-
-| Objet                                       | Prix    | Source      | Date       |
-| ------------------------------------------- | ------- | ----------- | ---------- |
-| Dell OptiPlex 7080                          | 214,49€ | Leboncoin   | 21/05/2025 |
-| Intel I7-10700T (Inclus)                    | 0€      | Leboncoin   | 21/05/2025 |
-| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz   | 102.90€ | Amazon (De) | 03/07/2025 |
-| NVMe WD BLUE SN5000 2TB                     | 114,99€ | Amazon (De) | 03/07/2025 |
-| SSD 2.5" 256GB                              | 0€      | Récup       |            |
-| WLAN M.2 A+E Key adapter to 2.5GbE Ethernet | 29,90€  | Amazon (Fr) | 04/01/2026 |
-
-##### Node 3
-
-| Objet                                       | Prix    | Source      | Date       |
-| ------------------------------------------- | ------- | ----------- | ---------- |
-| Dell OptiPlex 3080                          | 172.89€ | Leboncoin   | 04/06/2025 |
-| Intel I5-10500T (Inclus)                    | 0€      | Leboncoin   | 04/06/2025 |
-| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz   | 102.90€ | Amazon (De) | 03/07/2025 |
-| NVMe WD BLUE SN5000 2TB                     | 114.99€ | Amazon (De) | 03/07/2025 |
-| SSD 2.5" 256GB                              | 0€      | Récup       |            |
-| WLAN M.2 A+E Key adapter to 2.5GbE Ethernet | 29.90€  | Amazon (Fr) | 04/01/2026 |
-
 #### Shuttle XH510G
 
 ##### Node 1
 
-| Objet                                      | Prix    | Source           | Date              |
-| ------------------------------------------ | ------- | ---------------- | ----------------- |
-| Shuttle Slim XH510G                        | 182.99€ | Pixmania         | 08/01/2026        |
-| Intel I5-10500T (Inclus)                   | 0€      | Récup (OptiPlex) |                   |
-| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 0€      | Récup (OptiPlex) |                   |
-| NVMe WD BLUE SN5000 2TB                    | 0€      | Récup (OptiPlex) |                   |
-| SSD 2.5" 256GB                             | 0€      | Récup (OptiPlex) | ?                 |
-| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 66.99€  | Amazon (Fr)      | Pas encore acheté |
+| Objet                                      | Prix    | Source      | Date              |
+| ------------------------------------------ | ------- | ----------- | ----------------- |
+| Shuttle Slim XH510G                        | 182.99€ | Pixmania    | 08/01/2026        |
+| Intel I5-10500T (Inclus)                   | 0€      | Leboncoin   | 24/08/2024        |
+| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 110,99€ | Amazon (Fr) | 19/06/2025        |
+| NVMe WD BLUE SN5000 2TB                    | 114,99€ | Amazon (De) | 03/07/2025        |
+| SSD 2.5" 256GB                             | 0€      | Récup       |                   |
+| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 49.99€  | Amazon (Fr) | Pas encore acheté |
 
 
 ##### Node 2
 
-| Objet                                      | Prix    | Source           | Date              |
-| ------------------------------------------ | ------- | ---------------- | ----------------- |
-| Shuttle Slim XH510G                        | 182.99€ | Pixmania         | 08/01/2026        |
-| Intel I7-10700T (Inclus)                   | 0€      | Récup (OptiPlex) |                   |
-| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 0€      | Récup (OptiPlex) |                   |
-| NVMe WD BLUE SN5000 2TB                    | 0€      | Récup (OptiPlex) |                   |
-| SSD 2.5" 256GB                             | 0€      | Récup (OptiPlex) |                   |
-| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 66.99€  | Amazon (Fr)      | Pas encore acheté |
+| Objet                                      | Prix    | Source      | Date              |
+| ------------------------------------------ | ------- | ----------- | ----------------- |
+| Shuttle Slim XH510G                        | 182.99€ | Pixmania    | 08/01/2026        |
+| Intel I7-10700T (Inclus)                   | 0€      | Leboncoin   | 21/05/2025        |
+| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 102.90€ | Amazon (De) | 03/07/2025        |
+| NVMe WD BLUE SN5000 2TB                    | 114,99€ | Amazon (De) | 03/07/2025        |
+| SSD 2.5" 256GB                             | 0€      | Récup       |                   |
+| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 49.99€  | Amazon (Fr) | Pas encore acheté |
 
 
 ##### Node 3
 
-| Objet                                      | Prix    | Source           | Date              |
-| ------------------------------------------ | ------- | ---------------- | ----------------- |
-| Shuttle Slim XH510G                        | 182.99€ | Pixmania         | 08/01/2026        |
-| Intel I5-10500T (Inclus)                   | 0€      | Récup (OptiPlex) |                   |
-| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 0€      | Récup (OptiPlex) |                   |
-| NVMe WD BLUE SN5000 2TB                    | 0€      | Récup (OptiPlex) |                   |
-| SSD 2.5" 256GB                             | 0€      | Récup (OptiPlex) |                   |
-| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 66.99€  | Amazon (Fr)      | Pas encore acheté |
+| Objet                                      | Prix    | Source      | Date              |
+| ------------------------------------------ | ------- | ----------- | ----------------- |
+| Shuttle Slim XH510G                        | 182.99€ | Pixmania    | 08/01/2026        |
+| Intel I5-10500T (Inclus)                   | 0€      | Leboncoin   | 04/06/2025        |
+| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 102.90€ | Amazon (De) | 03/07/2025        |
+| NVMe WD BLUE SN5000 2TB                    | 114.99€ | Amazon (De) | 03/07/2025        |
+| SSD 2.5" 256GB                             | 0€      | Récup       |                   |
+| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 49.99€  | Amazon (Fr) | Pas encore acheté |
 
 
 
@@ -80,7 +45,6 @@
 | Objet                           | Prix    | Source    |
 | ------------------------------- | ------- | --------- |
 | HP EliteDesk                    | 172,89€ | Leboncoin |
-
 
 ### NAS
 
@@ -132,36 +96,53 @@
 | -------------------------------------------------- | ------ | ----------- | ----------------- |
 | SFP+ DAC 0,5 mètre x2                              | 21.84€ | Amazon (Fr) | 06/01/2026        |
 | SFP+ DAC 1 mètre                                   | 13.29€ | Amazon (Fr) | 04/01/2026        |
-| SFP+ DAC 1 mètre x4                                | 46€    | Amazon (Fr) | Pas encore acheté |
+| SFP+ DAC 1 mètre x4                                | 45.59€ | Amazon (Fr) | Pas encore acheté |
 | Module SFP+ 10GBASE-T                              | 28.49€ | Amazon (Fr) | 06/01/2026        |
 | DIGITUS Kyestone Module Cat-6a Blindé (Tooless) x5 | 25.80€ | Amazon (Fr) | 04/01/2026        |
 | Bobine 30m Ethernet Cat6A CU Monobrin U/UTP        | 36.38€ | Amazon (Fr) | 04/01/2026        |
 
+## Autres
+
+### UPS (Onduleur)
+
+| Objet                    | Prix    | Source   | Date       |
+| ------------------------ | ------- | -------- | ---------- |
+| CyberPower CP1350EPFCLCD | 277.49€ | tradeinn | 14/01/2026 |
 ## Totaux
 
 ### Compute
 
-| Section                    | Total         |
-| -------------------------- | ------------- |
-| Proxmox Shuttle Node 1     | 249.98€       |
-| Proxmox Shuttle Node 2     | 249.98€       |
-| Proxmox Shuttle Node 3     | 249.98€       |
-| Proxmox Backup Server      | 172.89€       |
-| NAS                        | 941.53€       |
-| Raspberry Pi 4 Model B 4Gb | 77.02€        |
-| **TOTAL COMPUTE**          | **1 941.38€** |
+|**Section**|**Total**|
+|---|---|
+|Proxmox Shuttle Node 1|458.96€|
+|Proxmox Shuttle Node 2|450.87€|
+|Proxmox Shuttle Node 3|450.87€|
+|Proxmox Backup Server|172.89€|
+|NAS|941.53€|
+|Raspberry Pi 4 Model B 4Gb|77.02€|
+|**TOTAL COMPUTE**|**2 552.14€**|
 
 ### Network
 
-| Section            | Total       |
-| ------------------ | ----------- |
-| Routeurs           | 430.80€     |
-| Points d'accès     | 209.00€     |
-| Switchs            | 173.62€     |
-| Équipements divers | 171.80€     |
-| **TOTAL NETWORK**  | **985.22€** |
+|**Section**|**Total**|
+|---|---|
+|Routeurs|430.80€|
+|Points d'accès|209.00€|
+|Switchs|173.62€|
+|Équipements divers|171.39€|
+|**TOTAL NETWORK**|**984.81€**|
 
+### Autres
+
+| **Section**      | **Total**   |
+| ---------------- | ----------- |
+| UPS (Onduleur)   | 277.49€     |
+| **TOTAL AUTRES** | **277.49€** |
 ### Total Général
 
-| **TOTAL** | **2 926.60€** |
-| --------- | ------------- |
+| **Catégorie**   | **Montant**   |
+| --------------- | ------------- |
+| Compute         | 2 552.14€     |
+| Network         | 984.81€       |
+| Autres          | 277.49€       |
+| **GRAND TOTAL** | **3 814.44€** |
