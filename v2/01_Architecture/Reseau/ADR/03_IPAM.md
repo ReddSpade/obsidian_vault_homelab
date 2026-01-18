@@ -4,7 +4,7 @@
 | 20   | Infrastructure | `10.20.0.0/24`  | `10.20.0.1` | Ring 0 (DNS, PKI, Vault, IdP)      |
 | 30   | Compute        | `10.30.0.0/24`  | `10.30.0.1` | Kubernetes nodes                   |
 | 40   | Storage        | `10.40.0.0/24`  | `10.40.0.1` | NAS                                |
-| 50   | Users          | `10.50.0.0/24`  | `10.50.0.1` | Postes clients                     |
+| 50   | Trusted Users  | `10.50.0.0/24`  | `10.50.0.1` | Postes clients                     |
 | 60   | IoT            | `10.60.0.0/24`  | `10.60.0.1` | Appareils "non fiables"            |
 | 70   | Guest          | `10.70.0.0/24`  | `10.70.0.1` | WiFi invités                       |
 | N/A  | Non Routable   | `172.16.0.0/29` | N/A         | Proxmox HA                         |
@@ -18,8 +18,9 @@
 | 10.10.0.1 | phy-rtr-prd-opn-01 | Routeur       | Routing/Pare-Feu/Gateway |
 | 10.10.0.2 | phy-mm-prd-frbx-01 | Modem         | Modem Freebox            |
 | 10.10.0.3 | phy-ap-prd-unfi-01 | Point d'accès | Wifi                     |
-| 10.10.0.4 | phy-sw-prd-mrlk-01 | Switch        | Connexion 2,5GbE         |
+| 10.10.0.4 | phy-sw-prd-mrlk-01 | Switch        | Connexion 2,5GbE + 1SFP+ |
 | 10.10.0.5 | phy-sw-prd-ntgr-01 | Switch        | Connexion 1GbE           |
+| 10.10.0.6 | phy-sw-prd-kpli-01 | Switch        | Connexion 2,5GbE + 2SFP+ |
 ### Pool Hyperviseurs
 
 | IP         | Hostname       | Objet       | Fonction       |

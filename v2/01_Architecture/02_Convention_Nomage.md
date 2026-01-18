@@ -6,7 +6,7 @@ Nomenclature du Lab :
 Type :
 Type d’Hardware de la machine
     • phy : Machine physique
-    • vir : Machine virtuelle
+    • vm  : Machine virtuelle
     • lxc : Linux Container
     • vps : Machine cloud
 
@@ -23,7 +23,6 @@ Environnement de la machine
     • prd : Production
     • dev : Developpment
     • tst : VM de tests
-    • bst : Bastion
 
 OS + Ver :
 Type d'OS et version

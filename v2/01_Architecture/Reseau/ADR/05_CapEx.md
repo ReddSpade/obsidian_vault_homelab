@@ -5,38 +5,38 @@
 
 ##### Node 1
 
-| Objet                                      | Prix    | Source      | Date              |
-| ------------------------------------------ | ------- | ----------- | ----------------- |
-| Shuttle Slim XH510G                        | 182.99€ | Pixmania    | 08/01/2026        |
-| Intel I5-10500T (Inclus)                   | 0€      | Leboncoin   | 24/08/2024        |
-| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 110,99€ | Amazon (Fr) | 19/06/2025        |
-| NVMe WD BLUE SN5000 2TB                    | 114,99€ | Amazon (De) | 03/07/2025        |
-| SSD 2.5" 256GB                             | 0€      | Récup       |                   |
-| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 49.99€  | Amazon (Fr) | Pas encore acheté |
+| Objet                                      | Prix    | Source      | Date       |
+| ------------------------------------------ | ------- | ----------- | ---------- |
+| Shuttle Slim XH510G                        | 182.99€ | Pixmania    | 08/01/2026 |
+| Intel I5-10500T (Inclus)                   | 0€      | Leboncoin   | 24/08/2024 |
+| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 110,99€ | Amazon (Fr) | 19/06/2025 |
+| NVMe WD BLUE SN5000 2TB                    | 114,99€ | Amazon (De) | 03/07/2025 |
+| SSD 2.5" 256GB                             | 0€      | Récup       |            |
+| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 49.99€  | Amazon (Fr) | 16/01/2025 |
 
 
 ##### Node 2
 
-| Objet                                      | Prix    | Source      | Date              |
-| ------------------------------------------ | ------- | ----------- | ----------------- |
-| Shuttle Slim XH510G                        | 182.99€ | Pixmania    | 08/01/2026        |
-| Intel I7-10700T (Inclus)                   | 0€      | Leboncoin   | 21/05/2025        |
-| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 102.90€ | Amazon (De) | 03/07/2025        |
-| NVMe WD BLUE SN5000 2TB                    | 114,99€ | Amazon (De) | 03/07/2025        |
-| SSD 2.5" 256GB                             | 0€      | Récup       |                   |
-| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 49.99€  | Amazon (Fr) | Pas encore acheté |
+| Objet                                      | Prix    | Source      | Date       |
+| ------------------------------------------ | ------- | ----------- | ---------- |
+| Shuttle Slim XH510G                        | 182.99€ | Pixmania    | 08/01/2026 |
+| Intel I7-10700T (Inclus)                   | 0€      | Leboncoin   | 21/05/2025 |
+| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 102.90€ | Amazon (De) | 03/07/2025 |
+| NVMe WD BLUE SN5000 2TB                    | 114,99€ | Amazon (De) | 03/07/2025 |
+| SSD 2.5" 256GB                             | 0€      | Récup       |            |
+| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 49.99€  | Amazon (Fr) | 16/01/2025 |
 
 
 ##### Node 3
 
-| Objet                                      | Prix    | Source      | Date              |
-| ------------------------------------------ | ------- | ----------- | ----------------- |
-| Shuttle Slim XH510G                        | 182.99€ | Pixmania    | 08/01/2026        |
-| Intel I5-10500T (Inclus)                   | 0€      | Leboncoin   | 04/06/2025        |
-| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 102.90€ | Amazon (De) | 03/07/2025        |
-| NVMe WD BLUE SN5000 2TB                    | 114.99€ | Amazon (De) | 03/07/2025        |
-| SSD 2.5" 256GB                             | 0€      | Récup       |                   |
-| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 49.99€  | Amazon (Fr) | Pas encore acheté |
+| Objet                                      | Prix    | Source      | Date       |
+| ------------------------------------------ | ------- | ----------- | ---------- |
+| Shuttle Slim XH510G                        | 182.99€ | Pixmania    | 08/01/2026 |
+| Intel I5-10500T (Inclus)                   | 0€      | Leboncoin   | 04/06/2025 |
+| Crucial 64GB SODIMM DDR4 (2x32GB) 3200Mhz  | 102.90€ | Amazon (De) | 03/07/2025 |
+| NVMe WD BLUE SN5000 2TB                    | 114.99€ | Amazon (De) | 03/07/2025 |
+| SSD 2.5" 256GB                             | 0€      | Récup       |            |
+| 10GbE NIC Intel X520-DA2 (Dual SFP+ ports) | 49.99€  | Amazon (Fr) | 16/01/2025 |
 
 
 
@@ -92,14 +92,14 @@
 
 ### Équipements divers
 
-| Objet                                              | Prix   | Source      | Date              |
-| -------------------------------------------------- | ------ | ----------- | ----------------- |
-| SFP+ DAC 0,5 mètre x2                              | 21.84€ | Amazon (Fr) | 06/01/2026        |
-| SFP+ DAC 1 mètre                                   | 13.29€ | Amazon (Fr) | 04/01/2026        |
-| SFP+ DAC 1 mètre x4                                | 45.59€ | Amazon (Fr) | Pas encore acheté |
-| Module SFP+ 10GBASE-T                              | 28.49€ | Amazon (Fr) | 06/01/2026        |
-| DIGITUS Kyestone Module Cat-6a Blindé (Tooless) x5 | 25.80€ | Amazon (Fr) | 04/01/2026        |
-| Bobine 30m Ethernet Cat6A CU Monobrin U/UTP        | 36.38€ | Amazon (Fr) | 04/01/2026        |
+| Objet                                              | Prix   | Source      | Date       |
+| -------------------------------------------------- | ------ | ----------- | ---------- |
+| SFP+ DAC 0,5 mètre x2                              | 21.84€ | Amazon (Fr) | 06/01/2026 |
+| SFP+ DAC 1 mètre                                   | 13.29€ | Amazon (Fr) | 04/01/2026 |
+| SFP+ DAC 1 mètre x4                                | 45.59€ | Amazon (Fr) | 16/01/2026 |
+| Module SFP+ 10GBASE-T                              | 28.49€ | Amazon (Fr) | 06/01/2026 |
+| DIGITUS Kyestone Module Cat-6a Blindé (Tooless) x5 | 25.80€ | Amazon (Fr) | 04/01/2026 |
+| Bobine 30m Ethernet Cat6A CU Monobrin U/UTP        | 36.38€ | Amazon (Fr) | 04/01/2026 |
 
 ## Autres
 
@@ -108,6 +108,9 @@
 | Objet                    | Prix    | Source   | Date       |
 | ------------------------ | ------- | -------- | ---------- |
 | CyberPower CP1350EPFCLCD | 277.49€ | tradeinn | 14/01/2026 |
+
+## Abonnements mensuels
+
 ## Totaux
 
 ### Compute

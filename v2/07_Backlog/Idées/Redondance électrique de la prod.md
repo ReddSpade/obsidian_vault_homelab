@@ -8,8 +8,3 @@ Pour ce faire, il faut un onduleur capable d'alimenter l’entièreté du cluste
 Pour ne pas avoir de coupure, il faudra opter pour un onduleur de type online
 
 Il faut donc calculer la quantité de KVA (Ou watts) que l'onduleur peut fournir:
-
-
-| Matériel            | Wattage |
-| ------------------- | ------- |
-| Shuttle Slim XH510G |         |
