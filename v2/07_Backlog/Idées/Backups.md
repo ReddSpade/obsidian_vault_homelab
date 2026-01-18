@@ -1,3 +1,4 @@
+## Idée
 
 Afin de sécuriser l'Infrastructure, il faut mettre en place une stratégie de backup. 
 
@@ -35,6 +36,8 @@ Le 1 est respecté car le 2e Proxmox Backup Server est un VPS Hetzner.
 Pour les VM avec une base de donnée, le cron de backup inclus un dumping de la base de donnée pré-backup afin qu'elle puisse être restaurée.
 
 ```txt
+AI GENERATED
+
 ┌─────────────────────────────────────────────────────────────┐
 │                        DONNÉES                              │
 ├─────────────────────────────────────────────────────────────┤

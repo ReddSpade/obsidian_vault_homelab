@@ -1,12 +1,12 @@
 
-| Projet                  | Dépend de               | Débloque                  | Priorité | Étapes           |
-| ----------------------- | ----------------------- | ------------------------- | -------- | ---------------- |
-| Backups hors site       | Externe                 | Protection données        | ⭐⭐⭐      | Pas commencé     |
-| Cluster K8s Mgmt        | Achat (~?€)             | Infra avancée             | ⭐⭐       | En considération |
-| IPMI Shuttles           | Achat + bricolage (~?€) | Opérationnel              | ⭐⭐       | Pas commencé     |
-| Redondance électrique   | Achat onduleur (277€)   | Protection prod existante | ⭐⭐⭐⭐     | Terminé          |
-| Serveur IA              | Achat (~1200€)          | Expérimentation           | ⭐        | En considération |
-| Unification des Switchs | Achat + décision marque | Une interface à gérer     | ⭐⭐       | En considération |
+| Projet                  | Dépend de               | Débloque                    | Priorité | Étapes           |
+| ----------------------- | ----------------------- | --------------------------- | -------- | ---------------- |
+| Backups hors site       | Externe                 | Protection données          | ⭐⭐⭐      | Pas commencé     |
+| Cluster K8s Mgmt        | Achat (~?€)             | Infra avancée               | ⭐⭐       | En considération |
+| IPMI Shuttles           | Achat + bricolage (~?€) | Opérationnel                | ⭐⭐       | Pas commencé     |
+| Redondance électrique   | Achat onduleur (277€)   | Protection prod existante   | ⭐⭐⭐⭐     | Terminé          |
+| Serveur IA              | Achat (~1200€)          | Expérimentation             | ⭐        | En considération |
+| Unification des Switchs | Achat + décision marque | Une seule interface à gérer | ⭐⭐       | En considération |
 
 ## Étapes
 

@@ -1,4 +1,3 @@
-
 ## Idée
 
 Afin d'éviter des corruptions sur le NAS et sur les clusters Proxmxo en cas de coupure de courant, il faut mettre en place un moyen de shutdown gracefully l'infra.
