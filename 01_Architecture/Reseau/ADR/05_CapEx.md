@@ -42,9 +42,10 @@
 
 ### Proxmox Backup Server
 
-| Objet                           | Prix    | Source    |
-| ------------------------------- | ------- | --------- |
-| HP EliteDesk                    | 172,89€ | Leboncoin |
+| Objet                                  | Prix   | Source    | Date       |
+| -------------------------------------- | ------ | --------- | ---------- |
+| HP EliteDesk                           | 96.44€ | Leboncoin | 26/12/2025 |
+| M2 A+E Key to 2.5 GbE Ethernet Adapter | 29.90€ | Amazon    | 04/01/2026 |
 
 ### NAS
 
@@ -72,7 +73,7 @@
 | Objet                           | Prix    | Source       | Date       |
 | ------------------------------- | ------- | ------------ | ---------- |
 | Vault VP2440                    | 430.80€ | Protetcli EU | 11/01/2026 |
-| Crucial 8GB SODIMM DDR4 3200Mhz | 0€      | Récup        |            |
+| Crucial 8GB SODIMM DDR5 3200Mhz | 50€     | Leboncoin    | 19/01/2026 |
 | SSD M2 Intel 660p               | 0€      | Récup        |            |
 
 ### Points d'accès
@@ -84,11 +85,13 @@
 
 ### Switchs
 
-| Objet                              | Prix   | Source       | Date       |
-| ---------------------------------- | ------ | ------------ | ---------- |
-| NETGEAR L2 8x1GbE                  | 37.99€ | Amazon (Fr)  | 02/02/2023 |
-| MokerLink L2 8x2.5GbE              | 72.64€ | Amazon (Com) | 02/12/2025 |
-| keepLiNK L2 4x2.5GbE + 2x10GbE SFP | 62.99€ | Amazon (Fr)  | 06/01/2026 |
+| Objet                                                      | Prix    | Source       | Date              |
+| ---------------------------------------------------------- | ------- | ------------ | ----------------- |
+| NETGEAR L2 8x1GbE                                          | 37.99€  | Amazon (Fr)  | 02/02/2023        |
+| MokerLink L2 8x2.5GbE<br>EN DÉCOMMISIONNEMENT              | 0€      | Amazon (Com) | 02/12/2025        |
+| keepLiNK L2 4x2.5GbE + 2x10GbE SFP<br>EN DÉCOMMISIONNEMENT | 0€      | Amazon (Fr)  | 06/01/2026        |
+| MikroTik CRS304-4XG-IN                                     | 189.36€ | Amazon (Fr)  | Pas encore acheté |
+| MikroTik CRS310-8G+2S+IN                                   | 203.56€ | Amazon (Fr)  | Pas encore acheté |
 
 ### Équipements divers
 
@@ -109,31 +112,30 @@
 | ------------------------ | ------- | -------- | ---------- |
 | CyberPower CP1350EPFCLCD | 277.49€ | tradeinn | 14/01/2026 |
 
-## Abonnements mensuels
-
 ## Totaux
 
 ### Compute
 
-|**Section**|**Total**|
-|---|---|
-|Proxmox Shuttle Node 1|458.96€|
-|Proxmox Shuttle Node 2|450.87€|
-|Proxmox Shuttle Node 3|450.87€|
-|Proxmox Backup Server|172.89€|
-|NAS|941.53€|
-|Raspberry Pi 4 Model B 4Gb|77.02€|
-|**TOTAL COMPUTE**|**2 552.14€**|
+| **Section**                | **Total**    |
+| -------------------------- | ------------ |
+| Proxmox Shuttle Node 1     | 458.96€      |
+| Proxmox Shuttle Node 2     | 450.87€      |
+| Proxmox Shuttle Node 3     | 450.87€      |
+| Proxmox Backup Server      | 126.34€      |
+| NAS                        | 941.53€      |
+| Raspberry Pi 4 Model B 4Gb | 77.02€       |
+| **TOTAL COMPUTE**          | **2505.59€** |
 
 ### Network
 
-|**Section**|**Total**|
-|---|---|
-|Routeurs|430.80€|
-|Points d'accès|209.00€|
-|Switchs|173.62€|
-|Équipements divers|171.39€|
-|**TOTAL NETWORK**|**984.81€**|
+| **Section**        | **Total**    |
+| ------------------ | ------------ |
+| Routeurs           | 480.80€      |
+| Points d'accès     | 209.00€      |
+| Switchs            | 430.91€      |
+| Équipements divers | 171.39€      |
+| **TOTAL NETWORK**  | **1292.10€** |
+
 
 ### Autres
 
@@ -143,9 +145,32 @@
 | **TOTAL AUTRES** | **277.49€** |
 ### Total Général
 
-| **Catégorie**   | **Montant**   |
-| --------------- | ------------- |
-| Compute         | 2 552.14€     |
-| Network         | 984.81€       |
-| Autres          | 277.49€       |
-| **GRAND TOTAL** | **3 814.44€** |
+| **Catégorie**   | **Montant**  |
+| --------------- | ------------ |
+| Compute         | 2505.59€     |
+| Network         | 1292.10€     |
+| Autres          | 277.49€      |
+| **GRAND TOTAL** | **4075.18€** |
+
+## Historique des dépenses par mois
+
+| Mois    | Montant  | Détail principal                        |
+| ------- | -------- | --------------------------------------- |
+| 2023-02 | 37.99€   | Switch Netgear                          |
+| 2024-07 | 968.73€  | NAS complet + Raspberry Pi              |
+| 2025-01 | 149.97€  | 3x NIC X520-DA2                         |
+| 2025-06 | 110.99€  | RAM Node 1                              |
+| 2025-07 | 550.77€  | RAM + NVMe Nodes 2-3, NVMe Node 1       |
+| 2025-12 | 223.83€  | Unifi AP + PoE + USB SATA               |
+| 2026-01 | 1907.16€ | Shuttles, Routeur, UPS, câbles, NIC NAS |
+
+**Non acheté :** MikroTik CRS304 (189.36€), MikroTik CRS310 (203.56€)
+
+### Cumul par année
+
+| Année | Total    |
+| ----- | -------- |
+| 2023  | 37.99€   |
+| 2024  | 968.73€  |
+| 2025  | 1132.02€ |
+| 2026  | 1543.54€ |

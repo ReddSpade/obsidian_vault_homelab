@@ -14,19 +14,17 @@ Ce choix a été fait car il y'a déjà un équipement UniFi à la maison, et qu
 
 ## Versus
 
-|          | Sécurité     | Prix       | Réputation       | Gestion                        | Rackable (futur rack)      |
-| -------- | ------------ | ---------- | ---------------- | ------------------------------ | -------------------------- |
-| MikroTik | A rechercher | Moins cher | Bonne réputation | Gestion via serveur Dude       | Oui pour les modèles visés |
-| Ubiquiti | Réputé       | Plus cher  | Bonne réputation | Une seule interface (Unifi OS) | Non nativement             |
-
-
+|          | Prix       | Réputation       | Gestion                        | Rackable (futur rack)      |
+| -------- | ---------- | ---------------- | ------------------------------ | -------------------------- |
+| MikroTik | Moins cher | Bonne réputation | Gestion via serveur Dude       | Oui pour les modèles visés |
+| Ubiquiti | Plus cher  | Bonne réputation | Une seule interface (Unifi OS) | Non nativement             |
 
 ## Modèles identifiés
 
 ### Remplaçant keepLiNK
 
 Origine:
-keepLiNK 4x 2.5GbE ports + 2 SFP+, L2, 62.99€.
+keepLiNK 4x 2.5GbE ports + 2 SFP+, L2: **62.99€**.
 
 | Nom           | Spécificités         | Marque   | Prix    | Site        | Commentaire                                     |
 | ------------- | -------------------- | -------- | ------- | ----------- | ----------------------------------------------- |
@@ -36,7 +34,7 @@ keepLiNK 4x 2.5GbE ports + 2 SFP+, L2, 62.99€.
 ## Remplaçant MokerLink
 
 Origine:
-MokerLink 8x 2.5GbE ports + 1 SFP+, L2, 72.64€.
+MokerLink 8x 2.5GbE ports + 1 SFP+, L2: **72.64€.**
 
 | Nom             | Spécificités                              | Marque   | Prix     | Site        | Commentaire                                                     |
 | --------------- | ----------------------------------------- | -------- | -------- | ----------- | --------------------------------------------------------------- |
