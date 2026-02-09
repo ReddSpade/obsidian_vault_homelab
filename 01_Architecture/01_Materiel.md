@@ -3,7 +3,6 @@
 
 Proxmox
 ├── Shuttle Slim XH510G
-├── Shuttle Slim XH510G
 │   ├── CPU: Intel i5-10500T (6C/12T)
 │   ├── RAM: 64Gb DDR4 SODIMM
 │   ├── Stockage:
