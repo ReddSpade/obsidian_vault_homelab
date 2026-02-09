@@ -40,3 +40,13 @@ MokerLink 8x 2.5GbE ports + 1 SFP+, L2: **72.64€.**
 | --------------- | ----------------------------------------- | -------- | -------- | ----------- | --------------------------------------------------------------- |
 | CRS310-8G+2S+IN | 8x2.5GbE + 2 port SFP+                    | MikroTik | 203.56€  | Amazon (fr) | Port USB.                                                       |
 | USW-Flex-2.5G-B | 8x2.5GbE + 1 port 10GbE PoE + 1 port SFP+ | Ubiquiti | 214.80 € | UniFi       | Port SFP+ et 10GbE en combo. <br>Géré par l'interface Unifi OS. |
+
+## Total
+
+### Total MikroTik
+
+392.92€
+
+### Total Ubiquiti
+
+538.80€

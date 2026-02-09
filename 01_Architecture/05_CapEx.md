@@ -66,6 +66,12 @@
 | Raspberry Pi 4 Model B 4Gb | 62.19€ | Leboncoin   | 16/07/2024 |
 | USB 3.0 vers SATA (UASP)   | 14.83€ | Amazon (Fr) | 06/12/2025 |
 | SSD 2.5" 1To               | 0€     | Récup       |            |
+## Serveur IA
+
+| Objet       | Prix    | Source    | Date       |
+| ----------- | ------- | --------- | ---------- |
+| RTX 3090 Fe | 721.19€ | Leboncoin | 05/02/2026 |
+
 ## Network
 
 ### Routeurs
@@ -123,8 +129,9 @@
 | Proxmox Shuttle Node 3     | 450.87€      |
 | Proxmox Backup Server      | 126.34€      |
 | NAS                        | 941.53€      |
+| PC Serveur IA              | 721.19€      |
 | Raspberry Pi 4 Model B 4Gb | 77.02€       |
-| **TOTAL COMPUTE**          | **2505.59€** |
+| **TOTAL COMPUTE**          | **3226.78€** |
 
 ### Network
 
@@ -154,6 +161,7 @@
 
 ## Historique des dépenses par mois
 
+<<<<<<<< HEAD:01_Architecture/ADR/05_CapEx.md
 | Mois    | Montant  |
 | ------- | -------- |
 | 2023-02 | 37.99€   |
@@ -163,6 +171,18 @@
 | 2025-07 | 550.77€  |
 | 2025-12 | 223.83€  |
 | 2026-01 | 1543.54€ |
+========
+| Mois    | Montant  | Détail principal                        |
+| ------- | -------- | --------------------------------------- |
+| 2023-02 | 37.99€   | Switch Netgear                          |
+| 2024-07 | 968.73€  | NAS complet + Raspberry Pi              |
+| 2025-01 | 149.97€  | 3x NIC X520-DA2                         |
+| 2025-06 | 110.99€  | RAM Node 1                              |
+| 2025-07 | 550.77€  | RAM + NVMe Nodes 2-3, NVMe Node 1       |
+| 2025-12 | 223.83€  | Unifi AP + PoE + USB SATA               |
+| 2026-01 | 1543.54€ | Shuttles, Routeur, UPS, câbles, NIC NAS |
+| 2026-02 | 721.19€  | RTX 3090 Fe                             |
+>>>>>>>> 09d1863 (long ass notes):01_Architecture/05_CapEx.md
 
 **Non acheté :** MikroTik CRS304 (189.36€), MikroTik CRS310 (203.56€)
 
@@ -173,4 +193,4 @@
 | 2023  | 37.99€   |
 | 2024  | 968.73€  |
 | 2025  | 1132.02€ |
-| 2026  | 1543.54€ |
+| 2026  | 2264.73€ |
