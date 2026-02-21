@@ -154,15 +154,15 @@
 
 ## Historique des dépenses par mois
 
-| Mois    | Montant  | Détail principal                        |
-| ------- | -------- | --------------------------------------- |
-| 2023-02 | 37.99€   | Switch Netgear                          |
-| 2024-07 | 968.73€  | NAS complet + Raspberry Pi              |
-| 2025-01 | 149.97€  | 3x NIC X520-DA2                         |
-| 2025-06 | 110.99€  | RAM Node 1                              |
-| 2025-07 | 550.77€  | RAM + NVMe Nodes 2-3, NVMe Node 1       |
-| 2025-12 | 223.83€  | Unifi AP + PoE + USB SATA               |
-| 2026-01 | 1907.16€ | Shuttles, Routeur, UPS, câbles, NIC NAS |
+| Mois    | Montant  |
+| ------- | -------- |
+| 2023-02 | 37.99€   |
+| 2024-07 | 968.73€  |
+| 2025-01 | 149.97€  |
+| 2025-06 | 110.99€  |
+| 2025-07 | 550.77€  |
+| 2025-12 | 223.83€  |
+| 2026-01 | 1543.54€ |
 
 **Non acheté :** MikroTik CRS304 (189.36€), MikroTik CRS310 (203.56€)
 

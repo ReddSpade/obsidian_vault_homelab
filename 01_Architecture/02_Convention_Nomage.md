@@ -1,3 +1,6 @@
+
+## Virtuel
+
 ```txt
 Nomenclature du Lab :
 
@@ -5,7 +8,6 @@ Nomenclature du Lab :
 
 Type :
 Type d’Hardware de la machine
-    • phy : Machine physique
     • vm  : Machine virtuelle
     • lxc : Linux Container
     • vps : Machine cloud
@@ -15,7 +17,6 @@ Fonction de la machine
     • k8s : Kubernetes
     • cli : clients
     • vlt : vault
-    • pve : proxmox
 Ainsi de suite
 
 Env :
@@ -31,7 +32,7 @@ Type d'OS et version
 
 ID :
 Informations optionelles + numéro :
-    • 01 : Instance 1 de cette objet
+    • 01 : Instance 1 de cet objet
     • cp01 : Control Plane 01
     • wk02 : Worker Node 02
     • nix01 : NixOS 01
@@ -44,4 +45,65 @@ ID des VM Proxmox :
 5xx  - Fonctions spécfiques
 8xxx - Templates LXC
 9xxx - Templates VM
+```
+
+
+## Physique
+
+### Compute
+
+```txt
+Nomenclature du Compute divers:
+
+[TYPE]-[FUNC]-[ID]
+
+Type :
+Type d’Hardware de la machine
+    • phy : Machine physique
+
+Fonction :
+Fonction de la machine
+    • pve : proxmox
+	• pbs : proxmox backup server
+	• nas : NAS	
+Ainsi de suite
+
+Env :
+Environnement de la machine
+    • prd : Production
+    • dev : Developpment
+
+ID :
+Informations optionelles + numéro :
+    • 01 : Instance 1 de cet objet
+
+```
+### Réseau
+
+```txt
+Nomenclature des équipements réseau:
+
+[TYPE]-[TYPE2]-[LOC]-[ID]
+
+Type :
+Type d’Hardware de la machine
+    • phy : Machine physique
+
+Type 2 :
+Type d'équipement
+    • sw  : Switch
+    • rtr : Router
+    • ap  : Point d'accès
+    • mdm : modem
+Ainsi de suite
+
+Loc :
+Localisation physique de l'appareil
+    • lvrm : living room (salon)
+    • gtec  : gaine technique
+    • ofce : office (bureau)
+
+ID :
+Informations optionelles + numéro :
+    • 01 : Instance 1 de cet objet
 ```

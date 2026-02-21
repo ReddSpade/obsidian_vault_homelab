@@ -1,12 +1,12 @@
 
-| Projet                  | Dépend de               | Débloque                    | Priorité | Étapes             |
-| ----------------------- | ----------------------- | --------------------------- | -------- | ------------------ |
-| Backups hors site       | Externe                 | Protection données          | ⭐⭐⭐      | Pas commencé       |
-| Cluster K8s Mgmt        | Achat                   | Infra avancée               | ⭐⭐       | En considération   |
-| IPMI Shuttles           | Achat + bricolage       | Opérationnel                | ⭐⭐       | Pas commencé       |
-| Redondance électrique   | Achat onduleur          | Protection prod existante   | ⭐⭐⭐⭐     | Terminé            |
-| Serveur IA              | Achat                   | Expérimentation             | ⭐        | En considération   |
-| Unification des Switchs | Achat + décision marque | Une seule interface à gérer | ⭐⭐       | En attente d'achat |
+| Projet                  | Dépend de               | Débloque                    | Priorité | Étapes                    |
+| ----------------------- | ----------------------- | --------------------------- | -------- | ------------------------- |
+| Backups hors site       | Externe                 | Protection données          | ⭐⭐⭐      | Pas commencé              |
+| Cluster K8s Mgmt        | Achat                   | Infra avancée               | ⭐⭐       | En considération          |
+| IPMI Shuttles           | Achat + bricolage       | Opérationnel                | ⭐⭐       | Pas commencé              |
+| Redondance électrique   | Achat onduleur          | Protection prod existante   | ⭐⭐⭐⭐     | En cours de mise en place |
+| Serveur IA              | Achat                   | Expérimentation             | ⭐        | En cours de mise en place |
+| Unification des Switchs | Achat + décision marque | Une seule interface à gérer | ⭐⭐       | En attente d'achat        |
 
 ## Étapes
 
@@ -23,3 +23,4 @@
 ⭐⭐ --> Importance moindre, améliorant l'infrastructure de manière notable, mais non critique. 
 ⭐⭐⭐ --> Haute Importance, améliorant grandement l'infrastructure.
 ⭐⭐⭐⭐ --> Importance capitale, vital à la survie et au bon fonctionnement de l'infrastructure.
+

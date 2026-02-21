@@ -10,7 +10,6 @@
 ### 1.1 Installation des équipements réseaux 
 
 - [ ] Routeur Protectli OPNsense.
-- [ ] Switch 2,5GbE MokerLink.
 - [ ] Switch 1GbE Netgear.
 - [ ] Point d'accès Ubiquiti.
 
@@ -84,7 +83,7 @@
 - [x] Ajout de la connexion OIDC avec Zitadel
 - [ ] [EN RÉFLEXION]
 ## Phase 3: Infrastructure non critique
-### 3.0 Gitlab
+### 3.0 ~~Gitlab~~
 
 - [x] Déploiement de Gitlab Omnibus.
 - [x] Optimisation de la consommation des ressources de Gitlab dans le fichier `/etc/gitlab/gitlab.rb`.

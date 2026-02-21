@@ -3,7 +3,6 @@
 
 Proxmox
 ├── Shuttle Slim XH510G
-├── Shuttle Slim XH510G
 │   ├── CPU: Intel i5-10500T (6C/12T)
 │   ├── RAM: 64Gb DDR4 SODIMM
 │   ├── Stockage:
@@ -50,7 +49,7 @@ Proxmox Backup Server
 Router
 └── Protectli Vault Pro VP2440
     ├── CPU: Intel N150 (4C/4T)
-    ├── RAM: 8Gb DDR4 SODIMM
+    ├── RAM: 8Gb DDR5 SODIMM
     ├── Stockage:
     │   └── Storage for VM: 256Gb NVME
     ├── Network:
@@ -62,13 +61,8 @@ Router
 
 Access Points
 └── Unifi U7-Pro-XG
-
-Switch MokerLink L2 2.5GbE
-└── Network
-    ├── NIC01-8: 2.5GbE
-    └── NIC09: SFP+
     
-Switch NetGear L2 1GbE
+Switch NetGear L2
 └── Network
     └── NIC01-8: 1GbE
     
@@ -87,13 +81,22 @@ NAS
 │   ├── OS: NVMe
 │   ├── Data:
 │   │   └── 4x4Tb HDD WDRED PRO (RAID5)
-│   └── Network:
-│       ├── NIC01: 1GbE
-│       └── NIC02: SFP+
+├── Network:
+│   ├── NIC01: 1GbE
+│   └── NIC02: SFP+
 └── OS: TrueNAS Scale
 
 ### OTHER
 
+Serveur IA
+├── Case: beQuiet! Silent Base 601
+├── CPU: AMD Ryzen 5 3600 (6C/12T)
+├── RAM: 32GB DDR4
+├── Storage:
+│   └── OS: NVMe
+└── OS: Debian 13 Trixie
+
 UPS
 └── CyberPower CP1350EPFCLCD
 ```
+

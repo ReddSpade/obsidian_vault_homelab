@@ -1,15 +1,15 @@
 
 ## Plan des VLANS
 
-| VLAN | Zone           | Subnet         | Gateway     | Rôle                                    |
-| ---- | -------------- | -------------- | ----------- | --------------------------------------- |
-| 10   | Management     | `10.10.0.0/24` | `10.10.0.1` | Proxmox (+PBS), switches, OPNsense      |
-| 20   | Infrastructure | `10.20.0.0/24` | `10.20.0.1` | Infrastructure critique et non critique |
-| 30   | Compute        | `10.30.0.0/24` | `10.30.0.1` | Kubernetes nodes                        |
-| 40   | Storage        | `10.40.0.0/24` | `10.40.0.1` | NAS                                     |
-| 50   | Users          | `10.50.0.0/24` | `10.50.0.1` | Postes clients                          |
-| 60   | IoT            | `10.60.0.0/24` | `10.60.0.1` | Appareils "non fiables"                 |
-| 70   | Guest          | `10.70.0.0/24` | `10.70.0.1` | WiFi invités                            |
+| VLAN | Zone           | Subnet         | Gateway     | Rôle                                                          |
+| ---- | -------------- | -------------- | ----------- | ------------------------------------------------------------- |
+| 10   | Management     | `10.10.0.0/24` | `10.10.0.1` | Équipements réseau                                            |
+| 20   | Infrastructure | `10.20.0.0/24` | `10.20.0.1` | Hyperviseurs, serveur de backup, et services d'infrastructure |
+| 30   | Compute        | `10.30.0.0/24` | `10.30.0.1` | Kubernetes nodes                                              |
+| 40   | Storage        | `10.40.0.0/24` | `10.40.0.1` | NAS                                                           |
+| 50   | Trusted Users  | `10.50.0.0/24` | `10.50.0.1` | Utilisateurs administrateurs                                  |
+| 60   | IoT            | `10.60.0.0/24` | `10.60.0.1` | Appareils "non fiables"                                       |
+| 70   | Guest          | `10.70.0.0/24` | `10.70.0.1` | WiFi invités                                                  |
 
 ### Choix 
 
@@ -21,3 +21,5 @@ Le choix de renseigner les IP par 10, 20, 30 ainsi de suite a été fait pour fa
 
 #### Gateway .1
 Si jamais le réseau passe en /23, il y'aura 512 adresses, avec un .1 on s'assure que la Gateway ne se retrouve pas a un endroit aléatoire du réseau, mais **toujours** au début
+
+
