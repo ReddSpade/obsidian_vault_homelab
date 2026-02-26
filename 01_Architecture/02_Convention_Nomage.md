@@ -68,11 +68,6 @@ Fonction de la machine
 	• nas : NAS	
 Ainsi de suite
 
-Env :
-Environnement de la machine
-    • prd : Production
-    • dev : Developpment
-
 ID :
 Informations optionelles + numéro :
     • 01 : Instance 1 de cet objet
