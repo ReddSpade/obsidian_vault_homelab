@@ -68,9 +68,14 @@
 | SSD 2.5" 1To               | 0€     | Récup       |            |
 ## Serveur IA
 
-| Objet       | Prix    | Source    | Date       |
-| ----------- | ------- | --------- | ---------- |
-| RTX 3090 Fe | 721.19€ | Leboncoin | 05/02/2026 |
+| Objet                           | Prix    | Source    | Date       |
+| ------------------------------- | ------- | --------- | ---------- |
+| RTX 3090 Fe                     | 721.19€ | Leboncoin | 05/02/2026 |
+| Ryzen 5 5600X                   | 0€      | Récup     | 03/03/2026 |
+| Mixed RAM 32Go DDR4 (4x8Go)     | 0€      | Récup     | 03/03/2026 |
+| beQuiet! Silent Base 601 Window | 0€      | Récup     | 03/03/2026 |
+| beQuiet! Pure Power 12M         | 0€      | Récup     | 03/03/2026 |
+| Aorus B560 Elite AX             | 0€      | Récup     | 03/03/2026 |
 
 ## Network
 
