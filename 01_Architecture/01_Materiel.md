@@ -79,8 +79,8 @@ NAS
 ├── RAM: 16GB DDR4
 ├── Storage:
 │   ├── OS: NVMe
-│   ├── Data:
-│   │   └── 4x4Tb HDD WDRED PRO (RAID5)
+│   └── Data:
+│       └── 4x4Tb HDD WDRED PRO (RAID5)
 ├── Network:
 │   ├── NIC01: 1GbE
 │   └── NIC02: SFP+
@@ -90,11 +90,12 @@ NAS
 
 Serveur IA
 ├── Case: beQuiet! Silent Base 601
-├── CPU: AMD Ryzen 5 3600 (6C/12T)
+├── CPU: AMD Ryzen 5 5600X (6C/12T)
+├── GPU: RTX 3090 Founders Edition
 ├── RAM: 32GB DDR4
 ├── Storage:
-│   └── OS: NVMe
-└── OS: Debian 13 Trixie
+│   └── OS: NVMe 500Go
+└── OS: Ubuntu Server LTS 24.04
 
 UPS
 └── CyberPower CP1350EPFCLCD

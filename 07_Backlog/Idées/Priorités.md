@@ -5,7 +5,7 @@
 | Cluster K8s Mgmt        | Achat                   | Infra avancée               | ⭐⭐       | En considération          |
 | IPMI Shuttles           | Achat + bricolage       | Opérationnel                | ⭐⭐       | Pas commencé              |
 | Redondance électrique   | Achat onduleur          | Protection prod existante   | ⭐⭐⭐⭐     | En cours de mise en place |
-| Serveur IA              | Achat                   | Expérimentation             | ⭐        | En cours de mise en place |
+| Serveur IA              | Achat                   | Expérimentation             | ⭐        | À mettre en production    |
 | Unification des Switchs | Achat + décision marque | Une seule interface à gérer | ⭐⭐       | En attente d'achat        |
 
 ## Étapes
@@ -14,8 +14,9 @@
 2. **Pas commencé** --> Le projet est une idée validée mais aucune action faite pour le mener à sont terme.
 3. **Budgétisation** --> Le projet a été validé, il faut désormais faire un total du prix que cela demandera avant de passer à l'action.
 4. **En attente d'achat** --> Le projet est budgétisé, l'achat doit être effectué avant de pouvoir l'intégrer.
-5. **En cours de mise en place** --> Le projet a été validé et budgétisé, les composants ont été commandés, et le projet doit être mis en place.
-6. **Terminé** --> Le projet est mis en place et en production.
+5. **En attente de livraison** --> Le projet a été validé et budgétisé, les composants ont été commandés.
+6. **À mettre en production** --> Tout est prêt, les composants sont livrés, il ne reste que la partie de mise en place.
+7. **En production** --> Le projet est mis en place et en production.
 
 ## Priorités
 

@@ -74,7 +74,7 @@
 | Ryzen 5 5600X                   | 0€      | Récup     | 03/03/2026 |
 | Mixed RAM 32Go DDR4 (4x8Go)     | 0€      | Récup     | 03/03/2026 |
 | beQuiet! Silent Base 601 Window | 0€      | Récup     | 03/03/2026 |
-| beQuiet! Pure Power 12M         | 0€      | Récup     | 03/03/2026 |
+| beQuiet! MWE 850W Gold v2       | 0€      | Récup     | 03/03/2026 |
 | Aorus B560 Elite AX             | 0€      | Récup     | 03/03/2026 |
 
 ## Network
@@ -157,16 +157,15 @@
 | **TOTAL AUTRES** | **277.49€** |
 ### Total Général
 
-| **Catégorie**   | **Montant**  |
-| --------------- | ------------ |
-| Compute         | 2505.59€     |
-| Network         | 1292.10€     |
-| Autres          | 277.49€      |
-| **GRAND TOTAL** | **4075.18€** |
+| **Catégorie**   | **Montant**   |
+| --------------- | ------------- |
+| Compute         | 2505.59€      |
+| Network         | 1292.10€      |
+| Autres          | 277.49€       |
+| **GRAND TOTAL** | **4796,37 €** |
 
 ## Historique des dépenses par mois
 
-<<<<<<<< HEAD:01_Architecture/ADR/05_CapEx.md
 | Mois    | Montant  |
 | ------- | -------- |
 | 2023-02 | 37.99€   |
@@ -176,7 +175,7 @@
 | 2025-07 | 550.77€  |
 | 2025-12 | 223.83€  |
 | 2026-01 | 1543.54€ |
-========
+
 | Mois    | Montant  | Détail principal                        |
 | ------- | -------- | --------------------------------------- |
 | 2023-02 | 37.99€   | Switch Netgear                          |
@@ -187,7 +186,7 @@
 | 2025-12 | 223.83€  | Unifi AP + PoE + USB SATA               |
 | 2026-01 | 1543.54€ | Shuttles, Routeur, UPS, câbles, NIC NAS |
 | 2026-02 | 721.19€  | RTX 3090 Fe                             |
->>>>>>>> 09d1863 (long ass notes):01_Architecture/05_CapEx.md
+
 
 **Non acheté :** MikroTik CRS304 (189.36€), MikroTik CRS310 (203.56€)
 
