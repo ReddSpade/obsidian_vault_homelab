@@ -1,5 +1,5 @@
 
-# LDC (Lavaduck Datacenter)
+# LMDC (Lavaduck Mini Datacenter)
 
 🚧 Ce projet et cette documentation sont en cours de construction et peuvent
 changer à tout moment.
