@@ -7,7 +7,7 @@ changer à tout moment.
 ## Table des matières
 
 - [Introduction](#introduction)
-- [Chapitrage](#chapitrage)
+- [Chapitres](#chapitres)
 - [La place de l'IA](#la-place-de-lia)
 - [Vos retours](#vos-retours)
 
@@ -16,7 +16,14 @@ changer à tout moment.
 Ce projet recueille l'ensemble des notes, schémas, procédures et projtes de mon
 homelab, il est utilisé avant tout comme un vault Obsidian.
 
-## Chapitrage
+Le but de ce lab est de ne pas me restreindre aux couches hautes du modèle OSI 
+comme mon métier de DevOps le voudrait, mais d'également apprendre les couches
+basses, tel que le réseau, ou l'obscure couche physique.
+
+Il a pour objectif de répliquer au mieux ce qu'on pourrait retrouver dans une (modeste)
+entreprise, et est également utilisé comme une prod personnelle.
+
+## Chapitres
 
 ### 00_Images
 
