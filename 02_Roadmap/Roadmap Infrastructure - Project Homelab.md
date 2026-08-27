@@ -269,7 +269,8 @@
 **Dépendance:** 
 - Gitlab.
 
-## Phase 5: Mise en HA du Cluster Proxmox + Proxmox Backup Server 
-
+## Phase 5: Mise en HA du Cluster Proxmox
 ## Phase 6: Kubernetes
+## Phase 7: Workload applicatif
+
 

@@ -10,7 +10,8 @@ Proxmox
 │   │   └── Storage for VM: 2Tb NVMe
 │   ├── Network:
 │   │   ├── NIC01: 1GbE
-│   │   └── NIC02: 10GbE
+│   │   ├── NIC02: 10GbE
+│   │   └── NIC03: 10GbE
 │   └── OS: Proxmox VE
 │
 ├── Shuttle Slim XH510G
@@ -20,7 +21,8 @@ Proxmox
 │   │   └── Storage for VM: 2Tb NVMe
 │   ├── Network:
 │   │   ├── NIC01: 1GbE
-│   │   └── NIC02: 10GbE
+│   │   ├── NIC02: 10GbE
+│   │   └── NIC03: 10GbE
 │   └── OS: Proxmox VE
 │
 └── Shuttle Slim XH510G
@@ -30,10 +32,11 @@ Proxmox
     │   └── Storage for VM: 2Tb NVMe
     ├── Network:
     │   ├── NIC01: 1GbE
-    │   └── NIC02: 10GbE
+    │   ├── NIC02: 10GbE
+    │   └── NIC03: 10GbE
     └── OS: Proxmox VE
 
-Proxmox Backup Server
+À déterminer
 └── HP EliteDesk 800 G3
     ├── CPU: Intel i5-6500T (4C/4T)
     ├── RAM: 8Gb DDR4 SODIMM
@@ -62,14 +65,14 @@ Router
 Access Points
 └── Unifi U7-Pro-XG
     
-Switch NetGear L2
+Switch MikroTik L2
 └── Network
-    └── NIC01-8: 1GbE
+    ├── NIC01-8: 2,5GbE
+	└── NIC01-2: SFP+
     
-Switch NetGear L2
+Switch Mikrotik L3
 └── Network
-    ├── NIC01-4: 2.5GbE
-    └── NIC5-6: SFP+
+    └── NIC01-8: SFP+
 
 ### STORAGE
 

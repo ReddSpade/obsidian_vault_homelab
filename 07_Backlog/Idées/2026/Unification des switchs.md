@@ -16,8 +16,8 @@ Ce choix a été fait car il y'a déjà un équipement UniFi à la maison, et qu
 
 |          | Prix       | Réputation       | Gestion                        | Rackable (futur rack)      |
 | -------- | ---------- | ---------------- | ------------------------------ | -------------------------- |
-| MikroTik | Moins cher | Bonne réputation | Gestion via serveur Dude       | Oui pour les modèles visés |
-| Ubiquiti | Plus cher  | Bonne réputation | Une seule interface (Unifi OS) | Non nativement             |
+| MikroTik | Moins cher | Bonne réputation | Gestion via serveur WinBox     | Oui pour les modèles visés |
+| Ubiquiti | Plus cher  | Bonne réputation | Une seule interface (Unifi OS) | Pas nativement             |
 
 ## Modèles identifiés
 
@@ -26,10 +26,10 @@ Ce choix a été fait car il y'a déjà un équipement UniFi à la maison, et qu
 Origine:
 keepLiNK 4x 2.5GbE ports + 2 SFP+, L2: **62.99€**.
 
-| Nom           | Spécificités         | Marque   | Prix    | Site        | Commentaire                                     |
-| ------------- | -------------------- | -------- | ------- | ----------- | ----------------------------------------------- |
-| CRS304-4XG-IN | 4x10GbE + 1 port PoE | MikroTik | 189.36€ | Amazon (fr) | Prise fibre + 2 alimentations (redondance élec) |
-| USW-Flex-XG   | 4x10GbE + 1 port PoE | Ubiquiti | 324€    | UniFi       | Prise USB-C, géré par l'interface Unifi OS.     |
+| Nom             | Spécificités          | Marque   | Prix | Site  | Commentaire                                 |
+| --------------- | --------------------- | -------- | ---- | ----- | ------------------------------------------- |
+| CRS309-1G-8S+IN | 8x10GbE + 1 port Mgmt | MikroTik |      |       | Port dédié pour le Boot                     |
+| USW-Flex-XG     | 4x10GbE + 1 port PoE  | Ubiquiti | 324€ | UniFi | Prise USB-C, géré par l'interface Unifi OS. |
 
 ## Remplaçant MokerLink
 
@@ -50,3 +50,7 @@ MokerLink 8x 2.5GbE ports + 1 SFP+, L2: **72.64€.**
 ### Total Ubiquiti
 
 538.80€
+
+## Choix définitif
+
+Achat des Switchs MikroTik.

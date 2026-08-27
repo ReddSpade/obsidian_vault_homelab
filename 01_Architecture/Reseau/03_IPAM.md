@@ -1,135 +1,145 @@
-| VLAN | Zone           | Subnet          | Gateway     | Rôle                               |
-| ---- | -------------- | --------------- | ----------- | ---------------------------------- |
-| 10   | Management     | `10.10.0.0/24`  | `10.10.0.1` | Proxmox (+PBS), switches, OPNsense |
-| 20   | Infrastructure | `10.20.0.0/24`  | `10.20.0.1` | Ring 0 (DNS, PKI, Vault, IdP)      |
-| 30   | Compute        | `10.30.0.0/24`  | `10.30.0.1` | Kubernetes nodes                   |
-| 40   | Storage        | `10.40.0.0/24`  | `10.40.0.1` | NAS                                |
-| 50   | Trusted Users  | `10.50.0.0/24`  | `10.50.0.1` | Postes clients                     |
-| 60   | IoT            | `10.60.0.0/24`  | `10.60.0.1` | Appareils "non fiables"            |
-| 70   | Guest          | `10.70.0.0/24`  | `10.70.0.1` | WiFi invités                       |
-| N/A  | Non Routable   | `172.16.0.0/29` | N/A         | Proxmox HA                         |
+| VLAN | Zone           | Subnet          | Gateway      | Rôle                                                          |
+| ---- | -------------- | --------------- | ------------ | ------------------------------------------------------------- |
+| 10   | Management     | `10.0.10.0/24`  | `10.0.10.1`  | Équipements réseau                                            |
+| 20   | Infrastructure | `10.0.20.0/24`  | `10.0.20.1`  | Hyperviseurs, serveur de backup, et services d'infrastructure |
+| 30   | Compute        | `10.0.30.0/24`  | `10.0.30.1`  | Nodes Kubernetes et workload                                  |
+| 40   | Storage        | `10.0.40.0/24`  | `10.0.40.1`  | NAS et stockages centralisés                                  |
+| 50   | Users          | `10.0.50.0/24`  | `10.0.50.1`  | Utilisateurs permantents                                      |
+| 60   | IoT            | `10.0.60.0/24`  | `10.0.60.1`  | Objets connectés avec connexion externe                       |
+| 70   | NoT            | `10.0.70.0/24`  | `10.0.70.1`  | Objets connectés sans connexion externe                       |
+| 80   | Guests         | `10.0.80.0/24`  | `10.0.80.1`  | WiFi invités                                                  |
+| 99   | DMZ            | `10.0.99.0/24`  | `10.0.99.1`  | DMZ pour le reverse proxy                                     |
+| N/A  | Proxmox Mesh   | `172.16.0.0/29` | Non-routable | Réseau mesh Proxmox HA                                        |
 
 ## VLAN 10 (Management)
 
 ### Pool Réseau
 
-| IP        | Hostname           | Objet         | Fonction                 |
-| --------- | ------------------ | ------------- | ------------------------ |
-| 10.10.0.1 | phy-rtr-prd-opn-01 | Routeur       | Routing/Pare-Feu/Gateway |
-| 10.10.0.2 | phy-mm-prd-frbx-01 | Modem         | Modem Freebox            |
-| 10.10.0.3 | phy-ap-prd-unfi-01 | Point d'accès | Wifi                     |
-| 10.10.0.4 | phy-sw-prd-mrlk-01 | Switch        | Connexion 2,5GbE + 1SFP+ |
-| 10.10.0.5 | phy-sw-prd-ntgr-01 | Switch        | Connexion 1GbE           |
-| 10.10.0.6 | phy-sw-prd-kpli-01 | Switch        | Connexion 2,5GbE + 2SFP+ |
-### Pool Hyperviseurs
+| IP          | Hostname        | Objet         | Fonction                 |
+| ----------- | --------------- | ------------- | ------------------------ |
+| `10.0.10.1` | phy-rtr-lvrm-01 | Routeur       | Routing/Pare-Feu/Gateway |
+| `10.0.10.2` | phy-mdm-lvrm-01 | Modem         | Freebox                  |
+| `10.0.10.3` | phy-ap-lvrm-01  | Point d'accès | Wi-Fi                    |
+| `10.0.10.4` | phy-ap-ofce-01  | Point d'accès | Wi-Fi                    |
+| `10.0.10.5` | phy-sw-lvrm-01  | Switch        | L3 10GbE                 |
+| `10.0.10.6` | phy-sw-lvrm-02  | Switch        | L2 2,5GbE                |
 
-| IP         | Hostname       | Objet       | Fonction       |
-| ---------- | -------------- | ----------- | -------------- |
-| 10.10.0.20 | phy-pve-prd-01 | Hyperviseur | Virtualisation |
-| 10.10.0.21 | phy-pve-prd-02 | Hyperviseur | Virtualisation |
-| 10.10.0.22 | phy-pve-prd-03 | Hyperviseur | Virtualisation |
-| 10.10.0.23 | phy-pbs-prd-01 | Hyperviseur | Backup         |
+
 ## VLAN 20 (Infrastructure)
 
 ### Pool Réseau
 
-| IP        | Hostname           | Objet   | Fonction                 |
-| --------- | ------------------ | ------- | ------------------------ |
-| 10.20.0.1 | phy-rtr-prd-opn-01 | Routeur | Routing/Pare-Feu/Gateway |
+| IP          | Hostname        | Objet   | Fonction                 |
+| ----------- | --------------- | ------- | ------------------------ |
+| `10.0.20.1` | phy-rtr-lvrm-01 | Routeur | Routing/Pare-Feu/Gateway |
+
+### Pool Hyperviseurs
+
+| IP           | Hostname   | Objet       | Fonction       |
+| ------------ | ---------- | ----------- | -------------- |
+| `10.0.10.10` | phy-pve-01 | Hyperviseur | Virtualisation |
+| `10.0.10.11` | phy-pve-02 | Hyperviseur | Virtualisation |
+| `10.0.10.12` | phy-pve-03 | Hyperviseur | Virtualisation |
 ### Pool LXC
 
-| IP         | Hostname              | Objet | Fonction                |
-| ---------- | --------------------- | ----- | ----------------------- |
-| 10.20.0.20 | lxc-dns-prd-deb13-01  | LXC   | DNS                     |
-| 10.20.0.21 | lxc-pki-prd-deb13-01  | LXC   | PKI                     |
-| 10.20.0.22 | lxc-vlt-prd-deb13-01  | LXC   | Gestionnaire de Secrets |
-| 10.20.0.23 | lxc-edge-prd-deb13-01 | LXC   | Reverse Proxy           |
+| IP           | Hostname              | Objet | Fonction                |
+| ------------ | --------------------- | ----- | ----------------------- |
+| `10.0.20.30` | lxc-dns-prd-deb13-01  | LXC   | DNS                     |
+| `10.0.20.31` | lxc-pki-prd-deb13-01  | LXC   | PKI                     |
+| `10.0.20.32` | lxc-vlt-prd-deb13-01  | LXC   | Gestionnaire de Secrets |
+
 ### Pool VM
 
-| IP         | Hostname             | Objet | Fonction               |
-| ---------- | -------------------- | ----- | ---------------------- |
-| 10.20.0.40 | vm-glab-prd-deb13-01 | VM    | SCM                    |
-| 10.20.0.41 | vm-iam-prd-deb13-01  | VM    | IdP + VPN              |
-| 10.20.0.42 | vm-ntbx-prd-deb13-01 | VM    | DCIM + IPAM            |
-| 10.20.0.43 | vm-grun-prd-deb13-01 | VM    | Gitlab Runner (Docker) |
-| 10.20.0.44 | vm-ubqt-prd-deb13-01 | VM    | Ubiquiti Controller    |
+| IP           | Hostname             | Objet | Fonction               |
+| ------------ | -------------------- | ----- | ---------------------- |
+| `10.0.20.60` | vm-glab-prd-deb13-01 | VM    | SCM                    |
+| `10.0.20.61` | vm-iam-prd-deb13-01  | VM    | IdP + VPN              |
+| `10.0.20.62` | vm-ntbx-prd-deb13-01 | VM    | DCIM + IPAM            |
+| `10.0.20.63` | vm-grun-prd-deb13-01 | VM    | Gitlab Runner (Docker) |
+| `10.0.20.64` | vm-ubqt-prd-deb13-01 | VM    | Ubiquiti Controller    |
 
 ## VLAN 30 (Compute)
 
 ### Pool Réseau
 
-| IP        | Hostname           | Objet   | Fonction                 |
-| --------- | ------------------ | ------- | ------------------------ |
-| 10.30.0.1 | phy-rtr-prd-opn-01 | Routeur | Routing/Pare-Feu/Gateway |
+| IP          | Hostname        | Objet   | Fonction                 |
+| ----------- | --------------- | ------- | ------------------------ |
+| `10.0.30.1` | phy-rtr-lvrm-01 | Routeur | Routing/Pare-Feu/Gateway |
 ### Pool Kubernetes (Dev + prod + mgmt)
  
 À déterminer selon le nombre de nodes Kubernetes
+
+### Pool Workload
+
+| IP           | Hostname       | Objet   | Fonction   |
+| ------------ | -------------- | ------- | ---------- |
+| `10.0.30.20` | phy-ia-lvrm-01 | Serveur | Serveur IA |
 
 ## VLAN 40 (Storage)
 
 ### Pool Réseau
 
-| IP        | Hostname           | Objet   | Fonction                 |
-| --------- | ------------------ | ------- | ------------------------ |
-| 10.40.0.1 | phy-rtr-prd-opn-01 | Routeur | Routing/Pare-Feu/Gateway |
+| IP          | Hostname        | Objet   | Fonction                 |
+| ----------- | --------------- | ------- | ------------------------ |
+| `10.0.40.1` | phy-rtr-lvrm-01 | Routeur | Routing/Pare-Feu/Gateway |
 
 ### Pool NAS
 
-| IP         | Hostname            | Objet | Fonction |
-| ---------- | ------------------- | ----- | -------- |
-| 10.40.0.20 | phy-nas-prd-trns-01 | NAS   | Stockage |
+| IP           | Hostname   | Objet | Fonction |
+| ------------ | ---------- | ----- | -------- |
+| `10.0.40.20` | phy-nas-01 | NAS   | Stockage |
 
 ## VLAN 50 (Users)
 
 ### Pool Réseau
 
-| IP        | Hostname           | Objet   | Fonction                 |
-| --------- | ------------------ | ------- | ------------------------ |
-| 10.50.0.1 | phy-rtr-prd-opn-01 | Routeur | Routing/Pare-Feu/Gateway |
+| IP          | Hostname        | Objet   | Fonction                 |
+| ----------- | --------------- | ------- | ------------------------ |
+| `10.0.50.1` | phy-rtr-lvrm-01 | Routeur | Routing/Pare-Feu/Gateway |
 
 ### Pool PC Reduck
 
-| IP         | Hostname       | Objet              | Fonction                           |
-| ---------- | -------------- | ------------------ | ---------------------------------- |
-| 10.50.0.20 | reduck         | PC Reduck          | PC Reduck NixOS (Dual Boot)        |
-| 10.50.0.21 | reduck         | PC Reduck Wifi     | PC Reduck Wifi NixOS (Dual Boot)   |
-| 10.50.0.22 | reduck-windows | PC Reduck          | PC Reduck Windows (Dual Boot)      |
-| 10.50.0.23 | reduck-windows | PC Reduck Wifi     | PC Reduck Wifi Windows (Dual Boot) |
-| 10.50.0.24 | reduck-laptop  | PC Portable Reduck | PC portable Reduck NixOS           |
-| 10.50.0.25 | CHE-WK33-MRD   | PC Reduck          | PC Travail Reduck                  |
+| IP           | Hostname       | Objet              | Fonction                           |
+| ------------ | -------------- | ------------------ | ---------------------------------- |
+| `10.0.50.20` | reduck         | PC Reduck          | PC Reduck NixOS (Dual Boot)        |
+| `10.0.50.21` | reduck         | PC Reduck Wifi     | PC Reduck Wifi NixOS (Dual Boot)   |
+| `10.0.50.22` | reduck-windows | PC Reduck          | PC Reduck Windows (Dual Boot)      |
+| `10.0.50.23` | reduck-windows | PC Reduck Wifi     | PC Reduck Wifi Windows (Dual Boot) |
+| `10.0.50.24` | reduck-laptop  | PC Portable Reduck | PC portable Reduck NixOS           |
+| `10.0.50.25` | CHE-WK33-MRD   | PC Reduck          | PC Travail Reduck                  |
 
 ### Pool PC Fenrir
 
-| IP         | Hostname                 | Objet          | Fonction                           |
-| ---------- | ------------------------ | -------------- | ---------------------------------- |
-| 10.50.0.40 | fenrir-pendragon         | PC Fenrir      | PC Fenrir CachyOS (Dual Boot)      |
-| 10.50.0.41 | fenrir-pendragon         | PC Wifi Fenrir | PC Fenrir Wifi CachyOS (Dual Boot) |
-| 10.50.0.42 | fenrir-pendragon-windows | PC Fenrir      | PC Fenrir Windows (Dual Boot)      |
-| 10.50.0.43 | fenrir-pendragon-windows | PC Wifi Fenrir | PC Fenrir Wifi Windows (Dual Boot) |
-| 10.50.0.42 | (nom inconnu)            | PC Fenrir      | PC Travail Fenrir                  |
+| IP           | Hostname                 | Objet          | Fonction                           |
+| ------------ | ------------------------ | -------------- | ---------------------------------- |
+| `10.0.50.40` | fenrir-pendragon         | PC Fenrir      | PC Fenrir CachyOS (Dual Boot)      |
+| `10.0.50.41` | fenrir-pendragon         | PC Wifi Fenrir | PC Fenrir Wifi CachyOS (Dual Boot) |
+| `10.0.50.42` | fenrir-pendragon-windows | PC Fenrir      | PC Fenrir Windows (Dual Boot)      |
+| `10.0.50.43` | fenrir-pendragon-windows | PC Wifi Fenrir | PC Fenrir Wifi Windows (Dual Boot) |
+| `10.0.50.42` | (nom inconnu)            | PC Fenrir      | PC Travail Fenrir                  |
 
 ### Pool PC autres
 
-| IP         | Hostname    | Objet       | Fonction    |
-| ---------- | ----------- | ----------- | ----------- |
-| 10.50.0.60 | macbook-air | MacBook Air | MacBook Air |
+| IP           | Hostname    | Objet       | Fonction    |
+| ------------ | ----------- | ----------- | ----------- |
+| `10.0.50.60` | macbook-air | MacBook Air | MacBook Air |
 ### Pool Consoles
 
-| IP         | Hostname         | Objet                  | Fonction         |
-| ---------- | ---------------- | ---------------------- | ---------------- |
-| 10.50.0.80 | switch-reduck    | Nintendo Switch Reduck | Nintendo Switch  |
-| 10.50.0.81 | switch-fenrir    | Nintendo Switch Fenrir | Nintendo Switch  |
-| 10.50.0.82 | ps4              | PS4                    | PS4              |
-| 10.50.0.83 | steamdeck-reduck | SteamDeck Reduck       | SteamDeck Reduck |
-| 10.50.0.84 | steamdeck-fenrir | SteamDeck Fenrir       | SteamDeck Fenrir |
+| IP           | Hostname         | Objet                  | Fonction         |
+| ------------ | ---------------- | ---------------------- | ---------------- |
+| `10.0.50.80` | switch-reduck    | Nintendo Switch Reduck | Nintendo Switch  |
+| `10.0.50.81` | switch-fenrir    | Nintendo Switch Fenrir | Nintendo Switch  |
+| `10.0.50.82` | ps4              | PS4                    | PS4              |
+| `10.0.50.83` | steamdeck-reduck | SteamDeck Reduck       | SteamDeck Reduck |
+| `10.0.50.84` | steamdeck-fenrir | SteamDeck Fenrir       | SteamDeck Fenrir |
 
 ## VLAN 60 (IoT)
 
 ### Pool Réseau
 
-| IP        | Hostname           | Objet   | Fonction                 |
-| --------- | ------------------ | ------- | ------------------------ |
-| 10.60.0.1 | phy-rtr-prd-opn-01 | Routeur | Routing/Pare-Feu/Gateway |
+| IP          | Hostname        | Objet   | Fonction                 |
+| ----------- | --------------- | ------- | ------------------------ |
+| `10.0.60.1` | phy-rtr-lvrm-01 | Routeur | Routing/Pare-Feu/Gateway |
 
 ### Pool HUE
 
@@ -137,32 +147,42 @@ Refaire inventory Philips Hue + Bridge
 
 ### Pool Smart objects
 
-| IP         | Hostname         | Objet            | Fonction         |
-| ---------- | ---------------- | ---------------- | ---------------- |
-| 10.60.0.20 | phy-tv-wbos-01   | Smart TV         | Télévision       |
-| 10.60.0.21 | phy-prnt-prsa-01 | Imprimante 3D    | Imprimante 3D    |
-| 10.60.0.22 | phy-prnt-hp-01   | Imprimante       | Imprimante       |
-| 10.60.0.23 | phy-vac-eurk-01  | Aspirateur Robot | Aspirateur Robot |
-| 10.60.0.24 | phy-ha-hmpd-01   | Apple Homepod    | Home assistant   |
-
-
-
-## VLAN 70 (Guests)
+| IP           | Hostname         | Objet            | Fonction         |
+| ------------ | ---------------- | ---------------- | ---------------- |
+| `10.0.60.20` | phy-tv-wbos-01   | Smart TV         | Télévision       |
+| `10.0.60.21` | phy-prnt-prsa-01 | Imprimante 3D    | Imprimante 3D    |
+| `10.0.60.22` | phy-prnt-hp-01   | Imprimante       | Imprimante       |
+| `10.0.60.23` | phy-vac-eurk-01  | Aspirateur Robot | Aspirateur Robot |
+| `10.0.60.24` | phy-ha-hmpd-01   | Apple Homepod    | Home assistant   |
+## VLAN 70 (NoT)
 
 ### Pool Réseau
-| IP        | Hostname           | Objet   | Fonction                 |
-| --------- | ------------------ | ------- | ------------------------ |
-| 10.70.0.1 | phy-rtr-prd-opn-01 | Routeur | Routing/Pare-Feu/Gateway |
+| IP          | Hostname        | Objet   | Fonction                 |
+| ----------- | --------------- | ------- | ------------------------ |
+| `10.0.70.1` | phy-rtr-lvrm-01 | Routeur | Routing/Pare-Feu/Gateway |
+## VLAN 80 (Guests)
+
+### Pool Réseau
+| IP          | Hostname        | Objet   | Fonction                 |
+| ----------- | --------------- | ------- | ------------------------ |
+| `10.0.80.1` | phy-rtr-lvrm-01 | Routeur | Routing/Pare-Feu/Gateway |
 ### Pool autre
 
 DHCP
+
+## VLAN 99 (DMZ)
+
+| IP          | Hostname        | Objet        | Fonction                 |
+| ----------- | --------------- | ------------ | ------------------------ |
+| `10.0.99.1` | phy-rtr-lvrm-01 | Routeur      | Routing/Pare-Feu/Gateway |
+| `10.0.99.2` | phy-rp-01       | Raspberry Pi | Reverse Proxy            |
 
 ## Non Routable
 
 ### Pool Hyperviseurs
 
-| IP         | Hostname       | Objet       | Fonction       |
-| ---------- | -------------- | ----------- | -------------- |
-| 172.16.0.1 | phy-pve-prd-01 | Hyperviseur | Virtualisation |
-| 172.16.0.2 | phy-pve-prd-02 | Hyperviseur | Virtualisation |
-| 172.16.0.3 | phy-pve-prd-03 | Hyperviseur | Virtualisation |
+| IP           | Hostname   | Objet       | Fonction       |
+| ------------ | ---------- | ----------- | -------------- |
+| `172.16.0.1` | phy-pve-01 | Hyperviseur | Virtualisation |
+| `172.16.0.2` | phy-pve-02 | Hyperviseur | Virtualisation |
+| `172.16.0.3` | phy-pve-03 | Hyperviseur | Virtualisation |

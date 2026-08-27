@@ -13,3 +13,6 @@ Niveau hardware, ce dernier devrait se composer de 3 PC, la solution la plus éc
 - 3 SSD NVMe (récup).
 
 Cela permettrait d'avoir 3 Control Plane faisant aussi du Worker.
+
+## Etat actuel
+

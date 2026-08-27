@@ -11,7 +11,7 @@
 
 - [ ] Routeur Protectli OPNsense.
 - [ ] Switch 1GbE Netgear.
-- [ ] Point d'accès Ubiquiti.
+- [x] Point d'accès Ubiquiti.
 
 ### 1.2 Paramétrage des équipements réseaux 
 
