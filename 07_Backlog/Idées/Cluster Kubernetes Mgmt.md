@@ -4,7 +4,9 @@ Le but est de mettre en place un cluster Kubernetes de management.
 Ce cluster comportera:
 
 - Cluster API afin de provisionner d'autres clusters Kubernetes sur le cluster Proxmox.
-- Crossplane afin de provisionner en GitOps les machines virtuelles dans Proxmox et autres, permettant de se débarasser de manière effective de Terraform et d'avoir de l'auto rémédiation.
+- Crossplane afin de provisionner en GitOps les machines virtuelles dans Proxmox et autres, permettant de se débarasser de manière effective de Terraform et d'avoir de l'auto rémédiation. (EN RÉFLEXION)
+- Sveltos afin de gérer le déploiement de cluster "types" (dev, prod)
+- Stack de monitoring pour la maison (Victoria + Grafana)
 
 Niveau hardware, ce dernier devrait se composer de 3 PC, la solution la plus économe en électricité et prix identifié serait:
 

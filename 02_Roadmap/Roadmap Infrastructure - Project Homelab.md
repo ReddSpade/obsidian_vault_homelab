@@ -82,7 +82,7 @@
 
 **Objectif:** Disposer d'un Reverese Proxy redirigeant les requêtes vers les bonnes IP, interne comme externe.
 
-**Type de virtualisation:** Machine Virtuelle (Nécessite Docker).
+**Type de virtualisation:** LXC.
 
 **Critères de complétion:** 
 - TLS Resolver Cloudflare paramétré via challenge DNS-01.
@@ -145,7 +145,7 @@
 ## Phase 3: Infrastructure non critique
 
 **Objectif final:** La phase 3 consiste à la mise en place des éléments du cluster qui ne sont pas indispensable à son démarrage. Comme des outils d'inventoring et SCM.
-### 3.0 Gitlab
+### 3.0 SCM (Gitlab)
 
 **Objectif:** Avoir en place un Gitlab privé qui contiendra la majeure partie de l'IaC de l'infrastructure.
 
@@ -162,7 +162,7 @@
 - Zitadel en ligne.
 - Traefik en ligne.
 
-### 3.1 Gitlab Runner
+### 3.1 CI/CD (Gitlab Runner)
 
 **Objectif:** Avoir en place un runner d'instance avec executor Gitlab afin de pouvoir créer des CI/CD.
 
@@ -195,7 +195,7 @@
 - Traefik en ligne.
 - Technitium (résolution DNS côté client)
 
-### 3.3 Netbox
+### 3.3 DCIM/IPAM (Netbox)
 
 **Objectif:** Avoir une inventorisation complète du parc informatique de la maison, avec un supplément sur le référencement de l'IPAM comme seule source de vérité.
 
@@ -228,7 +228,7 @@
 ## Phase 4: Automatisation et IaC
 
 **Objectif final:** Avoir une infrastructure immuable et automatisée, gérée par code conformément aux principes GitOps.
-### 4.0 Packer
+### 4.0 Golden Images (Packer)
 
 **Objectif:** Avoir un builder de Golden Images pour les machines virtuelles, dans l'idéal prêt pour de l'OS Wide.
 
@@ -238,7 +238,7 @@
 
 **Dépendance:** 
 - Gitlab en ligne.
-### 4.1 Cloud-Init
+### 4.1 Créations des comptes (Cloud-Init)
 
 **Objectif:** Injecter les informations lors du déploiement Terraform/OpenTofu (IP, Hostname, Clé SSH, Users, compte de service, ...)
 
@@ -247,7 +247,7 @@
 
 **Dépendance:** 
 - Gitlab en ligne.
-### 4.2 Terraform/OpenTofu
+### 4.2 Provisionnement (Terraform/OpenTofu)
 
 **Objectif:** Déployer des VM et LXC prod ready à partir des templates Packer généré, le but définitif est de moins possible toucher à l'UI Proxmox.
 
@@ -258,7 +258,7 @@
 
 **Dépendance:** 
 - Gitlab en ligne.
-### 4.3 Ansible
+### 4.3 Configuration post install (Ansible)
 
 **Objectif:** Préparer des playbooks divers permettant de gérer la configuration des machines (mise à jour, installation de paquets, ...)
 

@@ -1,0 +1,2 @@
+
+Dans Step-CA, `sub` et `key-id` sont des **labels**. C'est `sans` (x509) et `principals` (SSH) qui portent l'identité cryptographique. Step-CA recopie automatiquement `sub` → `sans` et `key-id` → `principals` si aucun n'est fourni, par commodité. Mais toujours **expliciter** `--san` et `--principal` en production pour éviter les surprises.

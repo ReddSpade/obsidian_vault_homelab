@@ -7,9 +7,11 @@ Proxmox
 │   ├── RAM: 64Gb DDR4 SODIMM
 │   ├── Stockage:
 │   │   ├── Boot: 256Gb SSD 2.5'
-│   │   └── Storage for VM: 2Tb NVMe
+│   │   └── Storage for VM: WD Blue SN5000 2Tb NVMe
 │   ├── Network:
 │   │   ├── NIC01: 1GbE
+│   │   ├── NIC02: 10GbE
+│   │   └── NIC03: 10GbE
 │   │   ├── NIC02: 10GbE
 │   │   └── NIC03: 10GbE
 │   └── OS: Proxmox VE
@@ -18,9 +20,11 @@ Proxmox
 │   ├── CPU: Intel i7-10700T (8C/16T)
 │   ├── RAM: 64Gb DDR4 SODIMM
 │   │   ├── Boot: 256Gb SSD 2.5'
-│   │   └── Storage for VM: 2Tb NVMe
+│   │   └── Storage for VM: WD Blue SN5000 2Tb NVMe
 │   ├── Network:
 │   │   ├── NIC01: 1GbE
+│   │   ├── NIC02: 10GbE
+│   │   └── NIC03: 10GbE
 │   │   ├── NIC02: 10GbE
 │   │   └── NIC03: 10GbE
 │   └── OS: Proxmox VE
@@ -29,9 +33,11 @@ Proxmox
     ├── CPU: Intel i5-10500T (6C/12T)
     ├── RAM: 64Gb DDR4 SODIMM
     │   ├── Boot: 256Gb SSD 2.5'
-    │   └── Storage for VM: 2Tb NVMe
+    │   └── Storage for VM: WD Blue SN5000 2Tb NVMe
     ├── Network:
     │   ├── NIC01: 1GbE
+    │   ├── NIC02: 10GbE
+    │   └── NIC03: 10GbE
     │   ├── NIC02: 10GbE
     │   └── NIC03: 10GbE
     └── OS: Proxmox VE
@@ -65,13 +71,14 @@ Router
 Access Points
 └── Unifi U7-Pro-XG
     
-Switch MikroTik L2
+Switch MikroTik CRS310-8G+2S+IN
 └── Network
     ├── NIC01-8: 2,5GbE
-	└── NIC01-2: SFP+
+	└── NIC09-10: SFP+
     
-Switch Mikrotik L3
+Switch MikroTik CRS309-1G-8S+IN
 └── Network
+    ├── NIC: PXE/BOOT
     └── NIC01-8: SFP+
 
 ### STORAGE
